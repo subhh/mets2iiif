@@ -24,7 +24,7 @@ the IIIF manifest.
 License
 -
 
-IIIF Presentation is released under the terms of the MIT license.
+METS2IIIF is released under the terms of the MIT license.
 
 Authors
 -
