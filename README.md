@@ -21,6 +21,12 @@ The application does not provide an in-memory representation of the IIIF entitie
 retrieve the requested information from the METS file. This operation is based on the isomorphism of a METS document and
 the IIIF manifest.
 
+Usage & Development
+-
+
+The application is in early development. It is hard-coded to resolve METS documents from the library's digital
+collection, uses placeholders for Manifest metadata, and does not provide the dimension of the Canvas.
+
 License
 -
 
