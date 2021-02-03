@@ -65,7 +65,7 @@ public final class EntityProvider
         return jsonFactory.createJsonObject(entityElement);
     }
 
-    Element getEntityElement (final Source source, final URL manifestUrl, final EntityType entityType, final String entityId) throws EntityNotFoundException
+    private Element getEntityElement (final Source source, final URL manifestUrl, final EntityType entityType, final String entityId) throws EntityNotFoundException
     {
         Transformer transformer = transformerProvider.newTransformer();
 

@@ -172,7 +172,7 @@ class JsonFactory
         }
     }
 
-    List<Element> getChildElements (final Element parent)
+    private List<Element> getChildElements (final Element parent)
     {
         List<Element> children = new ArrayList<Element>();
         NodeList nodes = parent.getChildNodes();
@@ -190,7 +190,7 @@ class JsonFactory
         return children;
     }
 
-    String createEQName (final Element element)
+    private String createEQName (final Element element)
     {
         return String.format("Q{%s}%s", element.getNamespaceURI(), element.getLocalName());
     }

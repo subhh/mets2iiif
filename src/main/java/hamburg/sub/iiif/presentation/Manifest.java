@@ -108,7 +108,7 @@ public final class Manifest
         return getEntityResponse(objectId, EntityType.Canvas, canvasId);
     }
 
-    Response getEntityResponse (final String objectId, final EntityType entityType, final String entityId)
+    private Response getEntityResponse (final String objectId, final EntityType entityType, final String entityId)
     {
         ResponseBuilder response;
         JsonObjectBuilder entity = getEntity(objectId, entityType, entityId);
@@ -121,7 +121,7 @@ public final class Manifest
         return response.build();
     }
 
-    JsonObjectBuilder getEntity (final String objectId, final EntityType entityType, final String entityId)
+    private JsonObjectBuilder getEntity (final String objectId, final EntityType entityType, final String entityId)
     {
         try {
             URI manifestUri = UriBuilder.fromPath("object/{objectId}/manifest").build(objectId);
@@ -133,14 +133,14 @@ public final class Manifest
         }
     }
 
-    Response getPreflightResponse ()
+    private Response getPreflightResponse ()
     {
         ResponseBuilder response = Response.status(Status.NO_CONTENT);
         response = injectHeaderCORS(response);
         return response.build();
     }
 
-    ResponseBuilder injectHeaderCORS (final ResponseBuilder response)
+    private ResponseBuilder injectHeaderCORS (final ResponseBuilder response)
     {
         response.header("Access-Control-Allow-Origin", "*");
         response.header("Access-Control-Allow-Methods", "GET, HEAD");
