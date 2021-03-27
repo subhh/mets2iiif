@@ -33,7 +33,7 @@ import net.jcip.annotations.ThreadSafe;
  * JAX-RS base application.
  */
 @ThreadSafe
-@ApplicationPath("/presentation")
+@ApplicationPath("/")
 public class Presentation extends Application
 {
 }
