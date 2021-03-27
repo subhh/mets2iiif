@@ -1,7 +1,9 @@
 <xsl:transform version="3.0" expand-text="yes"
-               xmlns:fn="https://iiif.dmaus.name/ns"
+               xmlns:dv="http://dfg-viewer.de/"
+               xmlns:fn="https://iiif.sub.uni-hamburg.de"
                xmlns:json="http://www.w3.org/2005/xpath-functions"
                xmlns:mets="http://www.loc.gov/METS/"
+               xmlns:mix="http://www.loc.gov/mix/v20"
                xmlns:mods="http://www.loc.gov/mods/v3"
                xmlns:xlink="http://www.w3.org/1999/xlink"
                xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -12,154 +14,168 @@
   <xsl:param name="entityId"    as="xs:string?" required="no"/>
 
   <xsl:mode on-no-match="shallow-skip"/>
+  <xsl:mode on-no-match="shallow-skip" name="metadata"/>
 
-  <xsl:key name="sequence" match="mets:div[@TYPE = 'physSequence']" use="@ID"/>
-  <xsl:key name="canvas" match="mets:div[@TYPE = 'page']" use="@ID"/>
-  <xsl:key name="image" match="mets:fileGrp[@USE = 'ZOOM']/mets:file[@MIMETYPE, 'application/vnd.kitodo.iiif']" use="@ID"/>
+  <xsl:output indent="yes"/>
 
-  <xsl:template match="/">
+  <xsl:key name="Sequence" match="mets:div[@TYPE = 'physSequence']" use="@ID"/>
+  <xsl:key name="Canvas" match="mets:div[@TYPE = 'page']" use="@ID"/>
+  <xsl:key name="Image" match="mets:file[@MIMETYPE = 'application/vnd.kitodo.iiif']" use="@ID"/>
+  <xsl:key name="Mix" match="mix:mix" use="ancestor::mets:techMD/@ID"/>
+
+  <xsl:variable name="description" as="element(mods:mods)" select="/mets:mets/mets:dmdSec[@ID = /mets:mets/mets:structMap[@TYPE = 'LOGICAL']/mets:div/@DMDID]//mods:mods"/>
+  <xsl:variable name="rights" as="element(dv:rights)" select="//dv:rights"/>
+
+  <xsl:template match="mets:mets">
     <xsl:variable name="entity" as="element(json:map)?">
       <xsl:choose>
-        <xsl:when test="$entityType eq 'Manifest'">
-          <xsl:call-template name="Manifest"/>
+        <xsl:when test="$entityType eq 'Canvas'">
+          <xsl:call-template name="Canvas">
+            <xsl:with-param name="canvasId" as="xs:string" select="$entityId"/>
+          </xsl:call-template>
         </xsl:when>
         <xsl:when test="$entityType eq 'Sequence'">
           <xsl:call-template name="Sequence">
-            <xsl:with-param name="sequenceId" as="xs:string?" select="$entityId"/>
+            <xsl:with-param name="sequenceId" as="xs:string" select="$entityId"/>
           </xsl:call-template>
         </xsl:when>
-        <xsl:when test="$entityType eq 'Canvas'">
-          <xsl:call-template name="Canvas">
-            <xsl:with-param name="canvasId" as="xs:string?" select="$entityId"/>
-          </xsl:call-template>
+        <xsl:when test="$entityType eq 'Manifest'">
+          <xsl:call-template name="Manifest"/>
         </xsl:when>
       </xsl:choose>
     </xsl:variable>
     <xsl:choose>
-      <xsl:when test="$entity">
-        <xsl:sequence select="$entity"/>
+      <xsl:when test="empty($entity)">
+        <error/>
       </xsl:when>
       <xsl:otherwise>
-        <error>Unable to retrieve entity '{$entityType}' with id '{$entityId}'</error>
+        <xsl:sequence select="$entity"/>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
 
-  <!-- Return canvas -->
-  <xsl:template name="Canvas" as="element(json:map)?">
-    <xsl:param name="canvasId" as="xs:string" required="yes"/>
-    <xsl:apply-templates select="key('canvas', $canvasId)">
-      <xsl:with-param name="context" as="xs:boolean" select="true()"/>
-    </xsl:apply-templates>
-  </xsl:template>
-
-  <!-- Return sequence -->
-  <xsl:template name="Sequence" as="element(json:map)?">
-    <xsl:param name="sequenceId" as="xs:string" required="yes"/>
-    <xsl:apply-templates select="key('sequence', $sequenceId)">
-      <xsl:with-param name="context" as="xs:boolean" select="true()"/>
-    </xsl:apply-templates>
-  </xsl:template>
-
-  <!-- Return manifest -->
+  <!-- Return the entire manifest. -->
   <xsl:template name="Manifest" as="element(json:map)?">
     <json:map>
       <json:string key="@context">http://iiif.io/api/presentation/2/context.json</json:string>
       <json:string key="@id">{$manifestUrl}</json:string>
       <json:string key="@type">sc:Manifest</json:string>
-      <xsl:call-template name="manifest-label">
-        <xsl:with-param name="manifest" as="element(mets:mets)" select="/mets:mets"/>
-      </xsl:call-template>
-      <xsl:call-template name="manifest-metadata">
-        <xsl:with-param name="manifest" as="element(mets:mets)" select="/mets:mets"/>
-      </xsl:call-template>
+      <json:string key="label">
+        <xsl:call-template name="fn:manifest-label"/>
+      </json:string>
+      <xsl:apply-templates select="$description" mode="metadata"/>
+      <json:string key="attribution">{$rights/dv:owner}</json:string>
       <json:array key="sequences">
-        <xsl:apply-templates select="/mets:mets/mets:structMap/mets:div[@TYPE = 'physSequence']"/>
+        <xsl:apply-templates select="mets:structMap/mets:div[@TYPE = 'physSequence']"/>
       </json:array>
     </json:map>
   </xsl:template>
 
-  <xsl:template match="mets:div[@TYPE = 'physSequence'][@ID]" as="element(json:map)">
-    <xsl:param name="context" as="xs:boolean" select="false()"/>
+  <!-- Return a single Sequence. -->
+  <xsl:template name="Sequence" as="element(json:map)?">
+    <xsl:param name="sequenceId" as="xs:string" required="yes"/>
+    <xsl:apply-templates select="key('Sequence', $sequenceId)">
+      <xsl:with-param name="provide-context" as="xs:boolean" select="true()"/>
+    </xsl:apply-templates>
+  </xsl:template>
+
+  <xsl:template match="mets:div[@TYPE = 'physSequence']">
+    <xsl:param name="provide-context" as="xs:boolean" select="false()"/>
     <json:map>
-      <xsl:if test="$context">
+      <xsl:if test="$provide-context">
         <json:string key="@context">http://iiif.io/api/presentation/2/context.json</json:string>
       </xsl:if>
-      <json:string key="@id">{resolve-uri("sequence/" || @ID, $manifestUrl)}</json:string>
+      <json:string key="@id">{resolve-uri('Sequence/' || @ID, $manifestUrl)}</json:string>
       <json:string key="@type">sc:Sequence</json:string>
-      <xsl:call-template name="sequence-label">
-        <xsl:with-param name="sequence" as="element(mets:div)" select="."/>
-      </xsl:call-template>
       <json:array key="canvases">
         <xsl:apply-templates select="mets:div[@TYPE = 'page']"/>
       </json:array>
     </json:map>
   </xsl:template>
 
-  <xsl:template match="mets:div[@TYPE = 'page'][@ID]" as="element(json:map)">
-    <xsl:param name="context" as="xs:boolean" select="false()"/>
-    <xsl:variable name="canvasUrl">{resolve-uri("canvas/" || @ID, $manifestUrl)}</xsl:variable>
+  <!-- Return a single canvas. -->
+  <xsl:template name="Canvas" as="element(json:map)?">
+    <xsl:param name="canvasId" as="xs:string" required="yes"/>
+    <xsl:apply-templates select="key('Canvas', $canvasId)">
+      <xsl:with-param name="provide-context" as="xs:boolean" select="true()"/>
+    </xsl:apply-templates>
+  </xsl:template>
+
+  <xsl:template match="mets:div[@TYPE = 'page']">
+    <xsl:param name="provide-context" as="xs:boolean" select="false()"/>
+    <xsl:variable name="image" as="element(mets:file)" select="key('Image', mets:fptr/@FILEID)"/>
+    <xsl:variable name="dimensions" as="map(xs:string, xs:integer)">
+      <xsl:call-template name="fn:image-dimensions">
+        <xsl:with-param name="image" as="element(mets:file)" select="$image"/>
+      </xsl:call-template>
+    </xsl:variable>
     <json:map>
-      <xsl:if test="$context">
+      <xsl:if test="$provide-context">
         <json:string key="@context">http://iiif.io/api/presentation/2/context.json</json:string>
       </xsl:if>
-      <json:string key="@id">{$canvasUrl}</json:string>
+      <json:string key="@id">{resolve-uri('Canvas/' || @ID, $manifestUrl)}</json:string>
       <json:string key="@type">sc:Canvas</json:string>
-      <xsl:call-template name="canvas-label">
-        <xsl:with-param name="canvas" as="element(mets:div)" select="."/>
-      </xsl:call-template>
-      <xsl:call-template name="canvas-dimensions">
-        <xsl:with-param name="canvas" as="element(mets:div)" select="."/>
-      </xsl:call-template>
-      <!-- TODO: Dimensions! -->
+      <json:string key="label">{(@ORDERLABEL, @ORDER, position())[1]}</json:string>
+      <json:number key="width">{$dimensions?width}</json:number>
+      <json:number key="height">{$dimensions?height}</json:number>
       <json:array key="images">
-        <xsl:for-each select="mets:fptr[exists(key('image', @FILEID))]">
-          <xsl:variable name="image" as="element(mets:file)" select="key('image', @FILEID)"/>
-          <json:map>
-            <json:string key="@type">oa:Annotation</json:string>
-            <json:string key="motivation">sc:painting</json:string>
-            <json:string key="on">{$canvasUrl}</json:string>
-            <json:map key="resource">
-              <json:string key="@id">{$image/mets:FLocat/@xlink:href}/full/full/0/default.jpg</json:string>
-              <json:string key="@type">dctypes:Image</json:string>
-              <json:string key="format">image/jpeg</json:string>
-              <json:map key="service">
-                <json:string key="@context">http://iiif.io/api/image/2/context.json</json:string>
-                <json:string key="@id">{$image/mets:FLocat/@xlink:href}</json:string>
-                <json:string key="profile">https://iiif.io/api/image/2/level2.json</json:string>
-              </json:map>
+        <json:map>
+          <json:string key="@type">oa:Annotation</json:string>
+          <json:string key="motivation">sc:painting</json:string>
+          <json:map key="resource">
+            <json:string key="@id">{$image/mets:FLocat/@xlink:href}/full/full/0/default.jpg</json:string>
+            <json:string key="@type">dctypes:Image</json:string>
+            <json:string key="format">image/jpeg</json:string>
+            <json:map key="service">
+              <json:string key="@context">http://iiif.io/api/image/2/context.json</json:string>
+              <json:string key="@id">{$image/mets:FLocat/@xlink:href}</json:string>
+              <json:string key="profile">http://iiif.io/api/image/2/level2.json</json:string>
             </json:map>
+            <json:number key="width">{$dimensions?width}</json:number>
+            <json:number key="height">{$dimensions?height}</json:number>
           </json:map>
-        </xsl:for-each>
+          <json:string key="on">{resolve-uri('Canvas/' || @ID, $manifestUrl)}</json:string>
+        </json:map>
       </json:array>
     </json:map>
   </xsl:template>
 
-  <!-- Descriptive Metadata -->
-  <xsl:template name="manifest-label" as="element()?">
-    <xsl:param name="manifest" as="element(mets:mets)" required="yes"/>
-    <json:string key="label">PLACEHOLDER</json:string>
+  <xsl:template name="fn:image-dimensions" as="map(xs:string, xs:integer)">
+    <xsl:param name="image" as="element(mets:file)" required="yes"/>
+    <xsl:map>
+      <xsl:map-entry key="'height'" select="xs:integer(key('Mix', tokenize($image/@ADMID))/mix:BasicImageInformation/mix:BasicImageCharacteristics/mix:imageWidth)"/>
+      <xsl:map-entry key="'width'"  select="xs:integer(key('Mix', tokenize($image/@ADMID))/mix:BasicImageInformation/mix:BasicImageCharacteristics/mix:imageHeight)"/>
+    </xsl:map>
   </xsl:template>
 
-  <xsl:template name="sequence-label" as="element()?">
-    <xsl:param name="sequence" as="element(mets:div)" required="yes"/>
-    <json:string key="label">PLACEHOLDER</json:string>
+  <xsl:template name="fn:manifest-label" as="xs:string">
+    <xsl:value-of separator=", " select="$description/mods:location/(mods:physicalLocation, mods:shelfLocator)"/>
   </xsl:template>
 
-  <xsl:template name="canvas-label"   as="element(json:string)?">
-    <xsl:param name="canvas" as="element(mets:div)" required="yes"/>
-    <json:string key="label">PLACEHOLDER</json:string>
+  <xsl:template mode="metadata" match="mods:mods" as="element(json:array)">
+    <json:array key="metadata">
+      <!-- Signatur -->
+      <xsl:apply-templates select="mods:location" mode="metadata"/>
+    </json:array>
   </xsl:template>
 
-  <xsl:template name="canvas-dimensions" as="element(json:number)+">
-    <xsl:param name="canvas" as="element(mets:div)" required="yes"/>
-    <json:number key="width">0</json:number>
-    <json:number key="height">0</json:number>
+  <xsl:template match="mods:location" mode="metadata" as="element(json:map)">
+    <json:map>
+      <json:array key="label">
+        <json:map>
+          <json:string key="@language">de</json:string>
+          <json:string key="@value">Signatur</json:string>
+        </json:map>
+        <json:map>
+          <json:string key="@language">en</json:string>
+          <json:string key="@value">Shelfmark</json:string>
+        </json:map>
+      </json:array>
+      <json:string key="value">
+        <xsl:value-of select="(mods:physicalLocation, mods:shelfLocator)" separator=", "/>
+      </json:string>
+    </json:map>
   </xsl:template>
-
-  <xsl:template name="manifest-metadata" as="element(json:array)">
-    <xsl:param name="manifest" as="element(mets:mets)" required="yes"/>
-    <json:array key="metadata"/>
-  </xsl:template>
+    
 
 </xsl:transform>
