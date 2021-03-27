@@ -41,6 +41,7 @@ import javax.ws.rs.core.UriInfo;
 import javax.ws.rs.core.UriBuilder;
 
 import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 
 import java.io.IOException;
@@ -59,9 +60,6 @@ import net.jcip.annotations.ThreadSafe;
 public final class Manifest
 {
     private final EntityProvider entities = new EntityProvider();
-
-    @Context
-    private UriInfo uriInfo;
 
     @Path("{objectId}/manifest")
     @OPTIONS
@@ -125,10 +123,10 @@ public final class Manifest
     {
         try {
             URI manifestUri = UriBuilder.fromPath("object/{objectId}/manifest").build(objectId);
-            URI baseUri = uriInfo.getBaseUri();
+            URI baseUri = new URI("https://iiif.sub.uni-hamburg.de/");
             URL manifestUrl = baseUri.resolve(manifestUri).toURL();
             return entities.getEntity(objectId, manifestUrl, entityType, entityId);
-        } catch (EntityNotFoundException | IOException e) {
+        } catch (EntityNotFoundException | URISyntaxException | IOException e) {
             return null;
         }
     }
