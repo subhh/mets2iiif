@@ -85,7 +85,7 @@
       <xsl:if test="$provide-context">
         <json:string key="@context">http://iiif.io/api/presentation/2/context.json</json:string>
       </xsl:if>
-      <json:string key="@id">{resolve-uri('Sequence/' || @ID, $manifestUrl)}</json:string>
+      <json:string key="@id">{resolve-uri('sequence/' || @ID, $manifestUrl)}</json:string>
       <json:string key="@type">sc:Sequence</json:string>
       <json:array key="canvases">
         <xsl:apply-templates select="mets:div[@TYPE = 'page']"/>
@@ -113,7 +113,7 @@
       <xsl:if test="$provide-context">
         <json:string key="@context">http://iiif.io/api/presentation/2/context.json</json:string>
       </xsl:if>
-      <json:string key="@id">{resolve-uri('Canvas/' || @ID, $manifestUrl)}</json:string>
+      <json:string key="@id">{resolve-uri('canvas/' || @ID, $manifestUrl)}</json:string>
       <json:string key="@type">sc:Canvas</json:string>
       <json:string key="label">{(@ORDERLABEL, @ORDER, position())[1]}</json:string>
       <json:number key="width">{$dimensions?width}</json:number>
@@ -134,7 +134,7 @@
             <json:number key="width">{$dimensions?width}</json:number>
             <json:number key="height">{$dimensions?height}</json:number>
           </json:map>
-          <json:string key="on">{resolve-uri('Canvas/' || @ID, $manifestUrl)}</json:string>
+          <json:string key="on">{resolve-uri('canvas/' || @ID, $manifestUrl)}</json:string>
         </json:map>
       </json:array>
     </json:map>
