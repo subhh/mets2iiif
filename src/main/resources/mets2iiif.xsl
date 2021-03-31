@@ -192,12 +192,12 @@
           </xsl:call-template>
           <xsl:choose>
             <xsl:when test="count($authors) gt 1">
-              <json:array key="@value">
+              <json:array key="value">
                 <xsl:sequence select="$authors"/>
               </json:array>
             </xsl:when>
             <xsl:otherwise>
-              <json:string key="@value">
+              <json:string key="value">
                 <xsl:value-of select="$authors"/>
               </json:string>
             </xsl:otherwise>
