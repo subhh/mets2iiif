@@ -5,6 +5,8 @@
                xmlns:mets="http://www.loc.gov/METS/"
                xmlns:mix="http://www.loc.gov/mix/v20"
                xmlns:mods="http://www.loc.gov/mods/v3"
+               xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+               xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
                xmlns:xlink="http://www.w3.org/1999/xlink"
                xmlns:xs="http://www.w3.org/2001/XMLSchema"
                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -22,6 +24,13 @@
   <xsl:key name="Canvas" match="mets:div[@TYPE = 'page']" use="@ID"/>
   <xsl:key name="Image" match="mets:file[@MIMETYPE = 'application/vnd.kitodo.iiif']" use="@ID"/>
   <xsl:key name="Mix" match="mix:mix" use="ancestor::mets:techMD/@ID"/>
+
+  <xsl:variable name="properties" as="element(rdf:Property)+">
+    <rdf:Property rdf:about="http://purl.org/dc/elements/1.1/identifier">
+      <rdfs:label xml:lang="en">Shelfmark</rdfs:label>
+      <rdfs:label xml:lang="de">Signatur</rdfs:label>
+    </rdf:Property>
+  </xsl:variable>
 
   <xsl:variable name="description" as="element(mods:mods)" select="/mets:mets/mets:dmdSec[@ID = /mets:mets/mets:structMap[@TYPE = 'LOGICAL']/mets:div/@DMDID]//mods:mods"/>
   <xsl:variable name="rights" as="element(dv:rights)" select="//dv:rights"/>
@@ -162,21 +171,39 @@
 
   <xsl:template match="mods:location" mode="metadata" as="element(json:map)">
     <json:map>
-      <json:array key="label">
-        <json:map>
-          <json:string key="@language">de</json:string>
-          <json:string key="@value">Signatur</json:string>
-        </json:map>
-        <json:map>
-          <json:string key="@language">en</json:string>
-          <json:string key="@value">Shelfmark</json:string>
-        </json:map>
-      </json:array>
+      <xsl:call-template name="metadata-label">
+        <xsl:with-param name="property" as="xs:string">http://purl.org/dc/elements/1.1/identifier</xsl:with-param>
+      </xsl:call-template>
       <json:string key="value">
         <xsl:value-of select="(mods:physicalLocation, mods:shelfLocator)" separator=", "/>
       </json:string>
     </json:map>
   </xsl:template>
-    
+
+  <xsl:template name="metadata-label" as="element()">
+    <xsl:param name="property" as="xs:string" required="true"/>
+    <xsl:choose>
+      <xsl:when test="$properties[@rdf:about eq $property]">
+        <json:array key="label">
+          <xsl:for-each select="$properties[@rdf:about eq $property]/rdfs:label">
+            <xsl:sort select="@xml:lang"/>
+            <json:map>
+              <json:string key="@language">
+                <xsl:value-of select="@xml:lang"/>
+              </json:string>
+              <json:string key="@value">
+                <xsl:value-of select="."/>
+              </json:string>
+            </json:map>
+          </xsl:for-each>
+        </json:array>
+      </xsl:when>
+      <xsl:otherwise>
+        <json:string key="label">
+          <xsl:value-of select="$property"/>
+        </json:string>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
 
 </xsl:transform>
