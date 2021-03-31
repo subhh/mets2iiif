@@ -30,6 +30,14 @@
       <rdfs:label xml:lang="en">Shelfmark</rdfs:label>
       <rdfs:label xml:lang="de">Signatur</rdfs:label>
     </rdf:Property>
+    <rdf:Property rdf:about="http://purl.org/dc/elements/1.1/title">
+      <rdfs:label xml:lang="en">Title</rdfs:label>
+      <rdfs:label xml:lang="de">Titel</rdfs:label>
+    </rdf:Property>
+    <rdf:Property rdf:about="http://purl.org/dc/elements/1.1/creator">
+      <rdfs:label xml:lang="en">Author</rdfs:label>
+      <rdfs:label xml:lang="de">Verfasser</rdfs:label>
+    </rdf:Property>
   </xsl:variable>
 
   <xsl:variable name="description" as="element(mods:mods)" select="/mets:mets/mets:dmdSec[@ID = /mets:mets/mets:structMap[@TYPE = 'LOGICAL']/mets:div/@DMDID]//mods:mods"/>
@@ -164,9 +172,50 @@
 
   <xsl:template mode="metadata" match="mods:mods" as="element(json:array)">
     <json:array key="metadata">
+      <!-- Titel -->
+      <xsl:apply-templates select="mods:titleInfo" mode="metadata"/>
       <!-- Signatur -->
       <xsl:apply-templates select="mods:location" mode="metadata"/>
+      <!-- Verfasser -->
+      <xsl:if test="mods:name[mods:role/mods:roleTerm/string() eq 'aut']">
+        <xsl:variable name="authors" as="element(json:string)+">
+          <xsl:for-each select="mods:name[mods:role/mods:roleTerm/string() eq 'aut']">
+            <json:string>
+              <xsl:value-of select="mods:displayForm"/>
+            </json:string>
+          </xsl:for-each>
+        </xsl:variable>
+
+        <json:map>
+          <xsl:call-template name="metadata-label">
+            <xsl:with-param name="property" as="xs:string">http://purl.org/dc/elements/1.1/creator</xsl:with-param>
+          </xsl:call-template>
+          <xsl:choose>
+            <xsl:when test="count($authors) gt 1">
+              <json:array key="@value">
+                <xsl:sequence select="$authors"/>
+              </json:array>
+            </xsl:when>
+            <xsl:otherwise>
+              <json:string key="@value">
+                <xsl:value-of select="$authors"/>
+              </json:string>
+            </xsl:otherwise>
+          </xsl:choose>
+        </json:map>
+      </xsl:if>
     </json:array>
+  </xsl:template>
+
+  <xsl:template match="mods:titleInfo[not(@type)]" mode="metadata" as="element(json:map)">
+    <json:map>
+      <xsl:call-template name="metadata-label">
+        <xsl:with-param name="property" as="xs:string">http://purl.org/dc/elements/1.1/title</xsl:with-param>
+      </xsl:call-template>
+      <json:string key="value">
+        <xsl:value-of select="(mods:title, mods:subTitle)" separator=" : "/>
+      </json:string>
+    </json:map>
   </xsl:template>
 
   <xsl:template match="mods:location" mode="metadata" as="element(json:map)">
