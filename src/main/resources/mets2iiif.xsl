@@ -65,6 +65,7 @@
       </json:string>
       <xsl:apply-templates select="$description" mode="metadata"/>
       <json:string key="attribution">{$rights/dv:owner}</json:string>
+      <json:string key="logo">{$rights/dv:ownerLogo}</json:string>
       <json:array key="sequences">
         <xsl:apply-templates select="mets:structMap/mets:div[@TYPE = 'physSequence']"/>
       </json:array>
