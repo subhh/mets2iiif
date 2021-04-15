@@ -38,6 +38,10 @@
       <rdfs:label xml:lang="en">Author</rdfs:label>
       <rdfs:label xml:lang="de">Verfasser</rdfs:label>
     </rdf:Property>
+    <rdf:Property rdf:about="http://purl.org/dc/elements/1.1/date">
+      <rdfs:label xml:lang="en">Date</rdfs:label>
+      <rdfs:label xml:lang="de">Datum</rdfs:label>
+    </rdf:Property>
   </xsl:variable>
 
   <xsl:variable name="description" as="element(mods:mods)" select="/mets:mets/mets:dmdSec[@ID = /mets:mets/mets:structMap[@TYPE = 'LOGICAL']/mets:div/@DMDID]//mods:mods"/>
@@ -204,6 +208,8 @@
           </xsl:choose>
         </json:map>
       </xsl:if>
+      <!-- Datum -->
+      <xsl:apply-templates select="mods:originInfo" mode="metadata"/>
     </json:array>
   </xsl:template>
 
@@ -225,6 +231,17 @@
       </xsl:call-template>
       <json:string key="value">
         <xsl:value-of select="(mods:physicalLocation, mods:shelfLocator)" separator=", "/>
+      </json:string>
+    </json:map>
+  </xsl:template>
+
+  <xsl:template match="mods:originInfo" mode="metadata" as="element(json:map)">
+    <json:map>
+      <xsl:call-template name="metadata-label">
+        <xsl:with-param name="property" as="xs:string">http://purl.org/dc/elements/1.1/date</xsl:with-param>
+      </xsl:call-template>
+      <json:string key="value">
+        <xsl:value-of select="mods:dateIssued"/>
       </json:string>
     </json:map>
   </xsl:template>
