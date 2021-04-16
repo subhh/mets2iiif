@@ -191,7 +191,7 @@
         </xsl:variable>
 
         <json:map>
-          <xsl:call-template name="metadata-label">
+          <xsl:call-template name="fn:metadata-label">
             <xsl:with-param name="property" as="xs:string">http://purl.org/dc/elements/1.1/creator</xsl:with-param>
           </xsl:call-template>
           <xsl:choose>
@@ -215,7 +215,7 @@
 
   <xsl:template match="mods:titleInfo[not(@type)]" mode="metadata" as="element(json:map)">
     <json:map>
-      <xsl:call-template name="metadata-label">
+      <xsl:call-template name="fn:metadata-label">
         <xsl:with-param name="property" as="xs:string">http://purl.org/dc/elements/1.1/title</xsl:with-param>
       </xsl:call-template>
       <json:string key="value">
@@ -226,7 +226,7 @@
 
   <xsl:template match="mods:location" mode="metadata" as="element(json:map)">
     <json:map>
-      <xsl:call-template name="metadata-label">
+      <xsl:call-template name="fn:metadata-label">
         <xsl:with-param name="property" as="xs:string">http://purl.org/dc/elements/1.1/identifier</xsl:with-param>
       </xsl:call-template>
       <json:string key="value">
@@ -237,7 +237,7 @@
 
   <xsl:template match="mods:originInfo" mode="metadata" as="element(json:map)">
     <json:map>
-      <xsl:call-template name="metadata-label">
+      <xsl:call-template name="fn:metadata-label">
         <xsl:with-param name="property" as="xs:string">http://purl.org/dc/elements/1.1/date</xsl:with-param>
       </xsl:call-template>
       <json:string key="value">
@@ -246,7 +246,7 @@
     </json:map>
   </xsl:template>
 
-  <xsl:template name="metadata-label" as="element()">
+  <xsl:template name="fn:metadata-label" as="element()">
     <xsl:param name="property" as="xs:string" required="true"/>
     <xsl:choose>
       <xsl:when test="$properties[@rdf:about eq $property]">
