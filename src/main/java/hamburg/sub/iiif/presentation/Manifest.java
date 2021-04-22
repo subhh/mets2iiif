@@ -36,11 +36,6 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.core.Response.ResponseBuilder;
-import javax.ws.rs.core.UriBuilder;
-
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
 
 import java.io.IOException;
 
@@ -121,7 +116,7 @@ public final class Manifest
     {
         try {
             return entities.getEntity(objectId, entityType, entityId);
-        } catch (EntityNotFoundException | URISyntaxException | IOException e) {
+        } catch (EntityNotFoundException | IOException e) {
             return null;
         }
     }
