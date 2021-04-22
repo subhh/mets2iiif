@@ -53,7 +53,7 @@ public final class EntityProvider
     private final TransformerProvider transformerProvider = new TransformerProvider();
     private final Environment environment = new Environment();
 
-    public JsonObjectBuilder getEntity (final String objectId, final URL manifestUrl, final EntityType entityType, final String entityId) throws IOException, EntityNotFoundException
+    public JsonObjectBuilder getEntity (final String objectId, final EntityType entityType, final String entityId) throws IOException, EntityNotFoundException
     {
         URL sourceUrl = environment.resolveSourceUrl(objectId);
         if (sourceUrl == null) {
@@ -61,18 +61,17 @@ public final class EntityProvider
         }
 
         Source source = new StreamSource(sourceUrl.openStream());
-        Element entityElement = getEntityElement(source, manifestUrl, entityType, entityId);
+        Element entityElement = getEntityElement(source, entityType, entityId);
         return jsonFactory.createJsonObject(entityElement);
     }
 
-    private Element getEntityElement (final Source source, final URL manifestUrl, final EntityType entityType, final String entityId) throws EntityNotFoundException
+    private Element getEntityElement (final Source source, final EntityType entityType, final String entityId) throws EntityNotFoundException
     {
         Transformer transformer = transformerProvider.newTransformer();
 
         DOMResult result = new DOMResult();
         try {
             transformer.clearParameters();
-            transformer.setParameter("manifestUrl", manifestUrl.toString());
             transformer.setParameter("entityType", entityType);
             if (entityId != null) {
                 transformer.setParameter("entityId", entityId);

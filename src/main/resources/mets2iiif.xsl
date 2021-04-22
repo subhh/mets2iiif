@@ -11,7 +11,6 @@
                xmlns:xs="http://www.w3.org/2001/XMLSchema"
                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <xsl:param name="manifestUrl" as="xs:string"  required="yes"/>
   <xsl:param name="entityType"  as="xs:string"  required="yes"/>
   <xsl:param name="entityId"    as="xs:string?" required="no"/>
 
@@ -45,6 +44,7 @@
   </xsl:variable>
 
   <xsl:variable name="description" as="element(mods:mods)" select="/mets:mets/mets:dmdSec[@ID = /mets:mets/mets:structMap[@TYPE = 'LOGICAL']/mets:div/@DMDID]//mods:mods"/>
+  <xsl:variable name="manifestUrl" as="xs:string" select="$description/mods:location/mods:url[@displayLabel = 'IIIF Manifest']"/>
   <xsl:variable name="rights" as="element(dv:rights)" select="//dv:rights"/>
 
   <xsl:template match="mets:mets">

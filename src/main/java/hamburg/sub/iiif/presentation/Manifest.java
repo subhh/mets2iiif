@@ -120,10 +120,7 @@ public final class Manifest
     private JsonObjectBuilder getEntity (final String objectId, final EntityType entityType, final String entityId)
     {
         try {
-            URI manifestUri = UriBuilder.fromPath("object/{objectId}/manifest").build(objectId);
-            URI baseUri = new URI("https://iiif.sub.uni-hamburg.de/");
-            URL manifestUrl = baseUri.resolve(manifestUri).toURL();
-            return entities.getEntity(objectId, manifestUrl, entityType, entityId);
+            return entities.getEntity(objectId, entityType, entityId);
         } catch (EntityNotFoundException | URISyntaxException | IOException e) {
             return null;
         }
