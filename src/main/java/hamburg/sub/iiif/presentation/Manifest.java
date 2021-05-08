@@ -58,7 +58,7 @@ public final class Manifest
     @OPTIONS
     public Response getManifestCORS ()
     {
-        return getPreflightResponse();
+        return Response.noContent().build();
     }
 
     @Path("{objectId}/manifest")
@@ -73,7 +73,7 @@ public final class Manifest
     @OPTIONS
     public Response getSequenceCORS ()
     {
-        return getPreflightResponse();
+        return Response.noContent().build();
     }
 
     @Path("{objectId}/sequence/{sequenceId}")
@@ -88,7 +88,7 @@ public final class Manifest
     @OPTIONS
     public Response getCanvasCORS ()
     {
-        return getPreflightResponse();
+        return Response.noContent().build();
     }
 
     @Path("{objectId}/canvas/{canvasId}")
@@ -108,7 +108,6 @@ public final class Manifest
         } else {
             response = Response.ok(entity.build().toString());
         }
-        response = injectHeaderCORS(response);
         return response.build();
     }
 
@@ -119,19 +118,5 @@ public final class Manifest
         } catch (EntityNotFoundException | IOException e) {
             return null;
         }
-    }
-
-    private Response getPreflightResponse ()
-    {
-        ResponseBuilder response = Response.status(Status.NO_CONTENT);
-        response = injectHeaderCORS(response);
-        return response.build();
-    }
-
-    private ResponseBuilder injectHeaderCORS (final ResponseBuilder response)
-    {
-        response.header("Access-Control-Allow-Origin", "*");
-        response.header("Access-Control-Allow-Methods", "GET, HEAD");
-        return response;
     }
 }
