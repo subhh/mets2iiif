@@ -1,0 +1,17 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://iiif.sub.uni-hamburg.de/collection",
+    "@type": "sc:Collection",
+    "label": "Digitalisierte Bestände",
+    "attribution": "Staats- und Universitätsbibliothek Hamburg",
+    "members": [
+        {
+            "@id": "https://iiif.sub.uni-hamburg.de/object/HANSb14780/manifest",
+            "@type": "sc:Manifest",
+            "label": "Postkarte an Richard Dehmel",
+            "thumbnail": "https://pic.sub.uni-hamburg.de/iiif/2/HANSb14780%2F00000001.ptif/full/320,/0/default.jpg"
+        }
+    ]
+}
+        
+        
