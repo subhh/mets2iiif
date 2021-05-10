@@ -1,2236 +1,2237 @@
+
   { "@context" : "http://iiif.io/api/presentation/2/context.json",
     "@id" : "https://iiif.sub.uni-hamburg.de/collection",
     "@type" : "sc:Collection",
     "label" : "Digitalisierte Bestände",
     "attribution" : "Staats- und Universitätsbibliothek Hamburg",
-    "members" :
-    [
+    "members" : 
+    [ 
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb14780/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Wien, 1899",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb14780%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb14780%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb15882/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb15882%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb15882%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb17560/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Hamburg, 1898",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb17560%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb17560%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb21185/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter und Lilli Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter und Lilli Behrens, Hamburg=Blankenese, 1908",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb21185%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb21185%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb22737/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Neubabelsberg, 1919",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22737%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22737%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb22738/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Hamburg, 1901",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22738%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22738%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb22739/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Düsseldorf, 1906",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22739%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22739%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb22740/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Ida Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Ida Dehmel, Neubabelsberg, 1919",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22740%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22740%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb22741/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22741%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22741%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb22742/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Düsseldorf, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22742%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22742%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb22743/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Darmstadt, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22743%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22743%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb22744/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Rom, 1904",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22744%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22744%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb22745/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22745%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22745%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb22746/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22746%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22746%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb22747/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22747%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22747%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb22748/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Hamburg, 1901",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22748%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22748%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb22753/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Telegramm an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Telegramm an Richard Dehmel, Neubabelsberg, 1913",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22753%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22753%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb22754/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard und Ida Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard und Ida Dehmel, Düsseldorf, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22754%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb22754%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb24410/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Stefan Zweig",
-        "thumbnail" :
+        "label" : "Brief an Stefan Zweig, 1902",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb24410%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb24410%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb24411/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Stefan Zweig",
-        "thumbnail" :
+        "label" : "Brief an Stefan Zweig, Hamburg, 1908",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb24411%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb24411%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb24412/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Stefan Zweig",
-        "thumbnail" :
+        "label" : "Brief an Stefan Zweig, Hamburg=Blankenese, 1911",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb24412%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb24412%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb24413/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Stefan Zweig",
-        "thumbnail" :
+        "label" : "Brief an Stefan Zweig, Hamburg=Blankenese, 1919",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb24413%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb24413%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb26322/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Wien, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb26322%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb26322%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb27498/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Berlin, 1902",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27498%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27498%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb27499/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Neu Zittau, 1902",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27499%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27499%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb27500/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Berlin, 1902",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27500%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27500%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb27502/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Wien, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27502%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27502%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb27503/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Rom, 1907",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27503%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27503%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb27505/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Wien, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27505%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27505%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb27506/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Wien, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27506%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27506%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb27507/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27507%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27507%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb27508/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, 1909",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27508%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27508%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb27509/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Jaipur, 1908",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27509%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27509%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb27510/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Madras, 1909",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27510%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27510%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb27511/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, o.O.=[Bombay], 1908",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27511%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27511%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb27512/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, o.O.=[Indien], 1909",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27512%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27512%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb27513/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Briefkarte an Ida Dehmel",
-        "thumbnail" :
+        "label" : "Briefkarte an Ida Dehmel, Wien, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27513%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27513%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb27514/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Ida Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Ida Dehmel, Wien, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27514%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27514%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb27515/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Ida Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Ida Dehmel, Wien, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27515%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27515%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb27516/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Ida Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Ida Dehmel, Wien, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27516%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27516%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb27517/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Telegramm an Ida Dehmel",
-        "thumbnail" :
+        "label" : "Telegramm an Ida Dehmel, Salzburg, 1920",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27517%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb27517%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb289762/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Ida Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Ida Dehmel, Salzburg, 1920",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb289762%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb289762%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb29366/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Stefan Zweig",
-        "thumbnail" :
+        "label" : "Brief an Stefan Zweig, 1907",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb29366%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb29366%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312790/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, Sirmione, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312790%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312790%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312815/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, Schloss Marbach, 1899",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312815%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312815%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312816/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, Spezgart bei Ueberlingen, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312816%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312816%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312817/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312817%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312817%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312818/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, München, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312818%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312818%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312819/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, Florenz, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312819%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312819%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312821/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312821%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312821%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312822/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312822%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312822%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312823/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, Heidelberg, 1901",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312823%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312823%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312824/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, Heidelberg, 1901",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312824%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312824%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312825/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, Heidelberg, 1901",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312825%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312825%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312826/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, Heidelberg, 1901",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312826%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312826%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312827/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Lilli Behrens",
-        "thumbnail" :
+        "label" : "Brief an Lilli Behrens, Heidelberg, 1901",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312827%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312827%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312828/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter und Lili Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter und Lili Behrens, 1902",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312828%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312828%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312829/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, Hamburg=Blankenese, 1902",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312829%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312829%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312830/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, Hamburg=Blankenese, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312830%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312830%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312831/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, Hamburg=Blankenese, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312831%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312831%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312832/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, Hamburg=Blankenese, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312832%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312832%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312833/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312833%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312833%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312834/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, Hamburg=Blankenese, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312834%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312834%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312835/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter und Lili Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter und Lili Behrens, Hamburg=Blankenese, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312835%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312835%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312836/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, Hamburg=Blankenese, 1904",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312836%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312836%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312837/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, Hamburg=Blankenese, 1904",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312837%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312837%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312838/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, Hamburg=Blankenese, 1904",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312838%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312838%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312839/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, Hamburg=Blankenese, 1905",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312839%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312839%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312840/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter und Lili Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter und Lili Behrens, Hamburg=Blankenese, 1905",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312840%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312840%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312842/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, Hamburg=Blankenese, 1907",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312842%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312842%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312843/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, Mannheim, 1907",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312843%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312843%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312844/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter und Lili Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter und Lili Behrens, Heidelberg, 1908",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312844%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312844%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312845/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter Behrens, Hamburg=Blankenese, 1918",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312845%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312845%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312864/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, München, 1899",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312864%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312864%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312969/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard und Ida Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard und Ida Dehmel, München, 1899",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312969%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312969%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312971/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1899",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312971%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312971%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312972/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1899",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312972%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312972%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312973/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312973%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312973%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312974/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Mainz, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312974%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312974%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312975/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312975%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312975%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312976/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312976%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312976%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312977/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312977%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312977%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312978/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312978%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312978%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312979/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312979%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312979%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312980/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312980%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312980%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312981/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Darmstadt, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312981%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312981%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312982/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312982%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312982%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312983/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312983%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312983%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312984/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Telegramm an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Telegramm an Richard Dehmel, Darmstadt, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312984%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312984%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312985/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Telegramm an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Telegramm an Richard Dehmel, Darmstadt, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312985%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312985%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312986/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Darmstadt, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312986%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312986%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312987/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Darmstadt, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312987%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312987%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312988/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312988%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312988%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312989/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Darmstadt, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312989%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312989%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312990/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312990%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312990%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312991/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312991%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312991%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312993/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Darmstadt, 1901",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312993%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312993%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312994/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Darmstadt, 1901",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312994%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312994%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312995/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1901",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312995%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312995%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312996/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Darmstadt, 1901",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312996%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312996%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312997/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1901",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312997%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312997%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312998/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1901",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312998%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312998%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb312999/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Telegramm an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Telegramm an Richard Dehmel, Darmstadt, 1901",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312999%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb312999%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313000/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1901",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313000%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313000%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313001/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Darmstadt, 1901",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313001%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313001%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313002/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Darmstadt, 1901",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313002%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313002%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313003/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1901",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313003%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313003%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313004/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1901",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313004%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313004%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313005/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1901",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313005%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313005%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313006/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1902",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313006%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313006%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313007/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Darmstadt, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313007%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313007%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313008/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Düsseldorf, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313008%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313008%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313009/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Düsseldorf, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313009%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313009%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313010/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel u. Ida Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel u. Ida Dehmel, Düsseldorf, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313010%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313010%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313011/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Düsseldorf, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313011%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313011%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313012/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Düsseldorf, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313012%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313012%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313013/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Düsseldorf, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313013%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313013%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313014/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Düsseldorf, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313014%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313014%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313015/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Düsseldorf, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313015%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313015%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313016/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Düsseldorf, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313016%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313016%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313017/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Düsseldorf, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313017%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313017%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313018/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Düsseldorf, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313018%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313018%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313019/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Düsseldorf, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313019%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313019%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313020/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Düsseldorf, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313020%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313020%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313021/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Düsseldorf, 1904",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313021%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313021%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313022/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Düsseldorf, 1904",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313022%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313022%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313023/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Düsseldorf, 1905",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313023%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313023%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313024/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Düsseldorf, 1905",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313024%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313024%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313025/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Düsseldorf, 1907",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313025%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313025%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313026/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Telegramm an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Telegramm an Richard Dehmel, Düsseldorf, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313026%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313026%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313027/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Telegramm an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Telegramm an Richard Dehmel, Hamburg, 1904",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313027%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313027%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313028/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Düsseldorf, 1904",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313028%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313028%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313029/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Düsseldorf, 1904",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313029%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313029%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313030/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Düsseldorf, 1904",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313030%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313030%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313031/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Düsseldorf, 1904",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313031%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313031%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313032/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Düsseldorf, 1904",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313032%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313032%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313033/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Düsseldorf, 1904",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313033%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313033%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313034/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Düsseldorf, 1904",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313034%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313034%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313035/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Düsseldorf, 1905",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313035%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313035%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313036/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Düsseldorf, 1905",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313036%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313036%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313037/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Düsseldorf, 1906",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313037%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313037%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313038/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Düsseldorf, 1907",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313038%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313038%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313039/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Wiesbaden, 1907",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313039%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313039%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313040/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Wiesbaden, 1907",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313040%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313040%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313043/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard und Ida Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard und Ida Dehmel, Neubabelsberg, 1908",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313043%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313043%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313044/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Neubabelsberg, 1908",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313044%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313044%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313045/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Neubabelsberg, 1909",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313045%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313045%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313046/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Neubabelsberg, 1909",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313046%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313046%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313047/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Neubabelsberg, 1913",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313047%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313047%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313048/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Neubabelsberg, 1917",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313048%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313048%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313049/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Neubabelsberg, 1917",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313049%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313049%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313050/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Neubabelsberg, 1918",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313050%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313050%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313051/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Neubabelsberg, 1919",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313051%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313051%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313052/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Telegramm an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Telegramm an Richard Dehmel, Neubabelsberg, 1911",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313052%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313052%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313053/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Telegramm an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Telegramm an Richard Dehmel, Neubabelsberg, 1912",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313053%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313053%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313055/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Neubabelsberg, 1912",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313055%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313055%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313056/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Neubabelsberg, 1908",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313056%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313056%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313057/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Neubabelsberg, 1908",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313057%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313057%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313070/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313070%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313070%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313168/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Berlin, 1902",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313168%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313168%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313169/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Berlin, 1902",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313169%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313169%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb313170/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Berlin, 1902",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313170%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb313170%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb319390/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Stefan Zweig",
-        "thumbnail" :
+        "label" : "Brief an Stefan Zweig, 1902",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb319390%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb319390%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb319393/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Stefan Zweig",
-        "thumbnail" :
+        "label" : "Brief an Stefan Zweig, 1902",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb319393%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb319393%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb319395/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Stefan Zweig",
-        "thumbnail" :
+        "label" : "Brief an Stefan Zweig, 1902",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb319395%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb319395%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb319446/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Stefan Zweig",
-        "thumbnail" :
+        "label" : "Brief an Stefan Zweig, 1902",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb319446%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb319446%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336009/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Stefan Zweig",
-        "thumbnail" :
+        "label" : "Brief an Stefan Zweig, Hamburg=Blankenese, 1902",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336009%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336009%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336010/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Darjeeling, 1909",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336010%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336010%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336011/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Ceylon, 1909",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336011%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336011%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336012/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Rangoon, 1909",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336012%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336012%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336013/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Stefan Zweig",
-        "thumbnail" :
+        "label" : "Brief an Stefan Zweig, Hamburg=Blankenese, 1902",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336013%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336013%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336014/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Stefan Zweig",
-        "thumbnail" :
+        "label" : "Brief an Stefan Zweig, 1906",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336014%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336014%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336015/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Stefan Zweig",
-        "thumbnail" :
+        "label" : "Brief an Stefan Zweig, 1906",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336015%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336015%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336016/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Stefan Zweig",
-        "thumbnail" :
+        "label" : "Brief an Stefan Zweig, Hamburg=Blankenese, 1919",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336016%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336016%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336017/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Delhi, 1908",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336017%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336017%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336018/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Ida Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Ida Dehmel, Wien, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336018%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336018%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336019/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Ida Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Ida Dehmel, Wien, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336019%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336019%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336020/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Ida Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Ida Dehmel, Wien, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336020%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336020%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336021/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Ida Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Ida Dehmel, Wien, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336021%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336021%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336022/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Ida Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Ida Dehmel, Wien, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336022%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336022%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336023/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Wien, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336023%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336023%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336024/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Wien, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336024%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336024%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336025/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Briefkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Briefkarte an Richard Dehmel, Wien, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336025%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336025%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336026/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Salzburg, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336026%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336026%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336027/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Wien, 1905",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336027%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336027%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336028/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, o.O, 1905",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336028%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336028%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336029/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Wien, 1906",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336029%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336029%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336030/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Wien, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336030%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336030%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336031/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Wien, 1907",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336031%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336031%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336032/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Wien, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336032%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336032%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336033/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Wien, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336033%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336033%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336034/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Wien, 1909",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336034%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336034%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336035/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Wien, 1909",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336035%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336035%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336036/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Wien, 1910",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336036%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336036%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336037/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Wien, 1911",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336037%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336037%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336038/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Hamilton Bermuda, 1911",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336038%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336038%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336042/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Wien, 1911",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336042%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336042%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336044/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Wien, 1911",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336044%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336044%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336046/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Telegramm an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Telegramm an Richard Dehmel, Meran, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336046%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336046%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336049/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336049%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336049%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336051/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Hamburg, 1912",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336051%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336051%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336054/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Telegramm an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Telegramm an Richard Dehmel, Hamburg, 1912",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336054%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336054%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336056/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Telegramm an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Telegramm an Richard Dehmel, Hamburg, 1912",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336056%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336056%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336058/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Telegramm an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Telegramm an Richard Dehmel, Hamburg, 1912",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336058%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336058%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336061/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Hamburg, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336061%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336061%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336062/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Wien, 1914",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336062%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336062%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336063/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Wien, 1917",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336063%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336063%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336064/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Richard Dehmel, Salzburg, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336064%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336064%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336066/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Telegramm an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Telegramm an Richard Dehmel, Salzburg, 1919",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336066%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336066%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336067/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Salzburg, 1919",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336067%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336067%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336075/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Ida Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Ida Dehmel, Wien, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336075%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336075%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336078/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Ida Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Ida Dehmel, Wien, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336078%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336078%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336080/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Ida Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Ida Dehmel, Wien, 1908",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336080%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336080%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336082/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Telegram an Ida Dehmel",
-        "thumbnail" :
+        "label" : "Telegram an Ida Dehmel, Wien, 1912",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336082%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336082%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336083/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Ida Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Ida Dehmel, Wien, 1912",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336083%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336083%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336086/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Ida Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Ida Dehmel, Salzburg, 1920",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336086%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336086%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336089/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Ida Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Ida Dehmel, Salzburg, ",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336089%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336089%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336090/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Postkarte an Ida Dehmel",
-        "thumbnail" :
+        "label" : "Postkarte an Ida Dehmel, Salzburg, 1922",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336090%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336090%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336091/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Ida Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Ida Dehmel, Salzburg, 1923",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336091%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336091%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336094/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Peter und Lilli Behrens",
-        "thumbnail" :
+        "label" : "Brief an Peter und Lilli Behrens, Heidelberg, 1908",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336094%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336094%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSb336262/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Brief an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Brief an Richard Dehmel, Neubabelsberg, 1903",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336262%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSb336262%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSdut661/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Den Fünfzigjährigen!",
-        "thumbnail" :
+        "label" : "Den Fünfzigjährigen!, Berlin, 1911",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSdut661%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSdut661%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } },
-
+      
       { "@id" : "https://iiif.sub.uni-hamburg.de/object/HANSig398/manifest",
         "@type" : "sc:Manifest",
-        "label" : "Ringentwurf an Richard Dehmel",
-        "thumbnail" :
+        "label" : "Ringentwurf an Richard Dehmel, Darmstadt, 1900",
+        "thumbnail" : 
         { "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSig398%2F00000001.ptif/full/320,/0/default.jpg",
-          "service" :
+          "service" : 
           { "@context" : "http://iiif.io/api/image/2/context.json",
             "@id" : "https://pic.sub.uni-hamburg.de/iiif/2/HANSig398%2F00000001.ptif",
             "profile" : "http://iiif.io/api/image/2/level1.json" } } } ] }
