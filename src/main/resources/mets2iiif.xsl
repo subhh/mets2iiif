@@ -144,7 +144,7 @@
       </xsl:if>
       <json:string key="@id">{resolve-uri('canvas/' || @ID, $manifestUrl)}</json:string>
       <json:string key="@type">sc:Canvas</json:string>
-      <json:string key="label">{(@ORDERLABEL, @ORDER, position())[1]}</json:string>
+      <json:string key="label">{(@ORDERLABEL[. ne ' - '], @ORDER, position())[1]}</json:string>
       <json:number key="width">{$dimensions?width}</json:number>
       <json:number key="height">{$dimensions?height}</json:number>
       <json:array key="images">
