@@ -106,6 +106,7 @@
     <json:map>
       <xsl:if test="$provide-context">
         <json:string key="@context">http://iiif.io/api/presentation/2/context.json</json:string>
+        <json:string key="within">{$manifestUrl}</json:string>
       </xsl:if>
       <json:string key="@id">{resolve-uri('sequence/' || @ID, $manifestUrl)}</json:string>
       <json:string key="@type">sc:Sequence</json:string>
@@ -134,6 +135,7 @@
     <json:map>
       <xsl:if test="$provide-context">
         <json:string key="@context">http://iiif.io/api/presentation/2/context.json</json:string>
+        <json:string key="within">{resolve-uri('sequence/' || ancestor::mets:div[@TYPE = 'physSequence']/@ID, $manifestUrl)}</json:string>
       </xsl:if>
       <json:string key="@id">{resolve-uri('canvas/' || @ID, $manifestUrl)}</json:string>
       <json:string key="@type">sc:Canvas</json:string>
