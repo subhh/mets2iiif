@@ -46,6 +46,7 @@
   <xsl:variable name="description" as="element(mods:mods)" select="/mets:mets/mets:dmdSec[@ID = /mets:mets/mets:structMap[@TYPE = 'LOGICAL']/mets:div/@DMDID]//mods:mods"/>
   <xsl:variable name="manifestUrl" as="xs:string" select="$description/mods:location/mods:url[@displayLabel = 'IIIF Manifest']"/>
   <xsl:variable name="rights" as="element(dv:rights)" select="//dv:rights"/>
+  <xsl:variable name="links" as="element(dv:links)" select="//dv:links"/>
 
   <xsl:template match="mets:mets">
     <xsl:variable name="entity" as="element(json:map)?">
@@ -87,6 +88,10 @@
       <xsl:apply-templates select="$description" mode="metadata"/>
       <json:string key="attribution">{$rights/dv:owner}</json:string>
       <json:string key="logo">{$rights/dv:ownerLogo}</json:string>
+      <json:map key="related">
+        <json:string key="@id">{$links/dv:presentation}</json:string>
+        <json:string key="format">text/html</json:string>
+      </json:map>
       <json:array key="sequences">
         <xsl:apply-templates select="mets:structMap/mets:div[@TYPE = 'physSequence']"/>
       </json:array>
