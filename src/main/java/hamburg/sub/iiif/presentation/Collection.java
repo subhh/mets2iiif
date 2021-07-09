@@ -24,6 +24,9 @@
 
 package hamburg.sub.iiif.presentation;
 
+import java.io.InputStream;
+import java.io.IOException;
+
 import javax.ws.rs.GET;
 import javax.ws.rs.OPTIONS;
 
@@ -51,6 +54,17 @@ public final class Collection
     @Produces({"application/ld+json", "application/json"})
     public Response getToplevelCollection ()
     {
-        return Response.ok(getClass().getResourceAsStream("/collection.json")).build();
+        InputStream resource = getClass().getResourceAsStream("/collection.json");
+        try {
+            return Response.ok(resource).build();
+        } finally {
+            try {
+                if (resource != null) {
+                    resource.close();
+                }
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
 }
