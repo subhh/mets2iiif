@@ -34,5 +34,4 @@ werden.
 
 ## Lizenz und Copyright
 
-Die Anwendung ist Copyright (c) 2021 Staats- und Universitätsbibliothek Hamburg und unter der GNU General Publice
-Licence v3 veröffentlicht.
+Die Anwendung ist Copyright (c) 2021 Staats- und Universitätsbibliothek Hamburg und unter der MIT Lizenz veröffentlicht.
