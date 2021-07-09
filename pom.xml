@@ -6,16 +6,16 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-    <name>METS2IIIF</name>
-    <url>https://gitlab.rrz.uni-hamburg.de/bax6198/mets2iiif</url>
+  <name>METS2IIIF</name>
+  <url>https://gitlab-ce.rrz.uni-hamburg.de/bax6198/mets2iiif</url>
 
-    <developers>
-      <developer>
-        <id>dmaus</id>
-        <name>David Maus</name>
-        <email>david.maus@sub.uni-hamburg.de</email>
-      </developer>
-    </developers>
+  <developers>
+    <developer>
+      <id>dmaus</id>
+      <name>David Maus</name>
+      <email>david.maus@sub.uni-hamburg.de</email>
+    </developer>
+  </developers>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
