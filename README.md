@@ -21,7 +21,6 @@ dynamisch ab, führt die Transformation aus und sendet das Manifest an den aufru
 | Manifest      | mets:mets                                                    | https://iiif.sub.uni-hamburg.de/object/{id}/manifest              |
 | Sequence      | mets:structMap[@TYPE = 'PHYSICAL']                           | https://iiif.sub.uni-hamburg.de/object/{id}/sequence/{sequenceId} |
 | Canvas        | mets:structMap[@TYPE = 'PHYSICAL']//mets:div[@TYPE = 'page'] | https://iiif.sub.uni-hamburg.de/object/{id}/canvas/{canvasId}     |
-|---------------|--------------------------------------------------------------|-------------------------------------------------------------------|
 
 ## Installation
 
