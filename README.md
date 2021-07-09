@@ -1,38 +1,38 @@
-METS2IIIF
-=
+# METS2IIIF
 
-About
--
+## Verwendung
 
-A Java JAX-RS web application that converts a digital object description from
-[METS](https://www.loc.gov/standards/mets/) to a [IIIF Presentation API v2](https://iiif.io/api/presentation/2.1/)
-manifest. It requires a METS that adheres to the [METS application profile for digitization
-projects](http://dfg-viewer.de/profil-der-metadaten/) by the german national research foundation ([Deutsche
-Forschungsgemeinschaft](https://dfg.de), DFG).
+Die Anwendung wird für die Bereitstellung von IIIF Manifesten der Digitalen Bestände seit Mai 2021 in einem Beta-Betrieb
+unter der Adresse https://iiif.sub.uni-hamburg.de eingesetzt.
 
-This application evolved from a [PHP web application](https://github.com/dmj/diglib-iiif) developed for the [HAB
-Wolfenbüttel](https://www.hab.de) and [Bodleian Libraries](https://www.bodleian.ox.ac.uk) joint project [Manuscripts
-from German-Speaking Lands – A Polonsky Foundation Digitization Project](https://hab.bodleian.ox.ac.uk) (2019–2021).
+## Funktionsweise
 
-Concept
--
+Die Anwendung beruht auf einem Isomorphismus zwischen dem METS Anwendungsprofil für digitalisierte Medien und dem [IIIF
+Manifest](https://iiif.io/api/presentation). Jeder Struktureinheit eines METS-Dokuments kann eine korrespondierende
+Struktureinheit im IIIF Manifest zugeordnet werden.
 
-The application does not provide an in-memory representation of the IIIF entities but uses XSL transformation to
-retrieve the requested information from the METS file. This operation is based on the isomorphism of a METS document and
-the IIIF manifest.
+Die Anwendung besteht aus einer [XSL Transformation](src/main/resources/mets2iiif.xsl), die eine METS-Datei in ein
+Manifest umwandelt und einer Java Anwendungsschicht, die die Adressen der IIIF Presentation API in die korrespondieren
+Manifest- und METS-Strukturen übersetzt. Die Java Anwendungsschicht ruft die zu einem Objekt gehörige METS-Datei
+dynamisch ab, führt die Transformation aus und sendet das Manifest an den aufrufenden Client.
 
-Usage & Development
--
+| IIIF Manifest | METS                                                         | URI Template                                                      |
+|---------------|--------------------------------------------------------------|-------------------------------------------------------------------|
+| Manifest      | mets:mets                                                    | https://iiif.sub.uni-hamburg.de/object/{id}/manifest              |
+| Sequence      | mets:structMap[@TYPE = 'PHYSICAL']                           | https://iiif.sub.uni-hamburg.de/object/{id}/sequence/{sequenceId} |
+| Canvas        | mets:structMap[@TYPE = 'PHYSICAL']//mets:div[@TYPE = 'page'] | https://iiif.sub.uni-hamburg.de/object/{id}/canvas/{canvasId}     |
+|---------------|--------------------------------------------------------------|-------------------------------------------------------------------|
 
-The application is in early development. It is hard-coded to resolve METS documents from the library's digital
-collection, uses placeholders for Manifest metadata, and does not provide the dimension of the Canvas.
+## Installation
 
-License
--
+Die Software wird als .war-Datei paketiert und muss in das entsprechende Verzeichnis eines Servlet-Containers kopiert
+werden.
 
-METS2IIIF is released under the terms of the MIT license.
+## Autoren
 
-Authors
--
+- David Maus &lt;david.maus@sub.uni-hamburg.de&gt;
 
-David Maus &lt;david.maus@sub.uni-hamburg.de&gt;
+## Lizenz und Copyright
+
+Die Anwendung ist Copyright (c) 2021 Staats- und Universitätsbibliothek Hamburg und unter der GNU General Publice
+Licence v3 veröffentlicht.
