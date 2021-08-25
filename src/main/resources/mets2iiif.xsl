@@ -172,8 +172,8 @@
   <xsl:template name="fn:image-dimensions" as="map(xs:string, xs:integer)">
     <xsl:param name="image" as="element(mets:file)" required="yes"/>
     <xsl:map>
-      <xsl:map-entry key="'height'" select="xs:integer(key('Mix', tokenize($image/@ADMID))/mix:BasicImageInformation/mix:BasicImageCharacteristics/mix:imageWidth)"/>
-      <xsl:map-entry key="'width'"  select="xs:integer(key('Mix', tokenize($image/@ADMID))/mix:BasicImageInformation/mix:BasicImageCharacteristics/mix:imageHeight)"/>
+      <xsl:map-entry key="'width'" select="xs:integer(key('Mix', tokenize($image/@ADMID))/mix:BasicImageInformation/mix:BasicImageCharacteristics/mix:imageWidth)"/>
+      <xsl:map-entry key="'height'"  select="xs:integer(key('Mix', tokenize($image/@ADMID))/mix:BasicImageInformation/mix:BasicImageCharacteristics/mix:imageHeight)"/>
     </xsl:map>
   </xsl:template>
 
