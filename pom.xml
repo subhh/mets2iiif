@@ -3,7 +3,7 @@
 
   <groupId>hamburg.sub.iiif</groupId>
   <artifactId>presentation</artifactId>
-  <version>1.0</version>
+  <version>1.0.1</version>
   <packaging>war</packaging>
 
   <name>METS2IIIF</name>
