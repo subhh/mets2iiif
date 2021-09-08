@@ -7,7 +7,7 @@
   <packaging>war</packaging>
 
   <name>METS2IIIF</name>
-  <url>https://gitlab-ce.rrz.uni-hamburg.de/bax6198/mets2iiif</url>
+  <url>https://gitlab-ce.rrz.uni-hamburg.de/subhh/mets2iiif</url>
 
   <developers>
     <developer>
