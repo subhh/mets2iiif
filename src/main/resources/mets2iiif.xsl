@@ -22,6 +22,7 @@
   <xsl:key name="Sequence" match="mets:div[@TYPE = 'physSequence']" use="@ID"/>
   <xsl:key name="Canvas" match="mets:div[@TYPE = 'page']" use="@ID"/>
   <xsl:key name="Image" match="mets:file[@MIMETYPE = 'application/vnd.kitodo.iiif']" use="@ID"/>
+  <xsl:key name="Range" match="mets:div[ancestor::mets:structMap[@TYPE = 'LOGICAL']]" use="@ID"/>
   <xsl:key name="Mix" match="mix:mix" use="ancestor::mets:techMD/@ID"/>
 
   <xsl:variable name="properties" as="element(rdf:Property)+">
