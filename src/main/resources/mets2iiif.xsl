@@ -100,11 +100,11 @@
         <json:string key="@id">{$links/dv:presentation}</json:string>
         <json:string key="format">text/html</json:string>
       </json:map>
-      <json:array key="structures">
-        <xsl:apply-templates select="mets:structMap[@TYPE = 'LOGICAL']"/>
-      </json:array>
       <json:array key="sequences">
         <xsl:apply-templates select="mets:structMap/mets:div[@TYPE = 'physSequence']"/>
+      </json:array>
+      <json:array key="structures">
+        <xsl:apply-templates select="mets:structMap[@TYPE = 'LOGICAL']"/>
       </json:array>
     </json:map>
   </xsl:template>
@@ -198,9 +198,48 @@
       <json:string key="@id">{resolve-uri('range/' || @ID, $manifestUrl)}</json:string>
       <json:string key="@type">sc:Range</json:string>
       <xsl:if test="$provide-members">
-        <json:array key="members"/>
+        <json:array key="members">
+          <xsl:call-template name="fn:flatten-range">
+            <xsl:with-param name="ranges" as="element(mets:div)*" select="mets:div"/>
+            <xsl:with-param name="canvases" as="element(mets:div)*" select="fn:covered-canvas(.)"/>
+          </xsl:call-template>
+        </json:array>
       </xsl:if>
     </json:map>
+  </xsl:template>
+
+  <xsl:template name="fn:flatten-range" as="element()*">
+    <xsl:param name="ranges"   as="element(mets:div)*" required="yes"/>
+    <xsl:param name="canvases" as="element(mets:div)*" required="yes"/>
+
+    <xsl:choose>
+      <xsl:when test="empty($ranges)">
+        <xsl:for-each select="$canvases">
+          <json:map>
+            <json:string key="@id">{resolve-uri('canvas/' || @ID, $manifestUrl)}</json:string>
+            <json:string key="@type">sc:Canvas</json:string>
+            <json:string key="label">{(@ORDERLABEL[. ne ' - '], @ORDER, position())[1]}</json:string>
+          </json:map>
+        </xsl:for-each>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:variable name="firstCanvasInRange" as="element(mets:div)" select="head(fn:covered-canvas(head($ranges)))"/>
+        <xsl:for-each select="$canvases[. &lt;&lt; $firstCanvasInRange]">
+          <json:map>
+            <json:string key="@id">{resolve-uri('canvas/' || @ID, $manifestUrl)}</json:string>
+            <json:string key="@type">sc:Canvas</json:string>
+            <json:string key="label">{(@ORDERLABEL[. ne ' - '], @ORDER, position())[1]}</json:string>
+          </json:map>
+        </xsl:for-each>
+        <xsl:apply-templates select="head($ranges)">
+          <xsl:with-param name="provide-members" as="xs:boolean" select="false()"/>
+        </xsl:apply-templates>
+        <xsl:call-template name="fn:flatten-range">
+          <xsl:with-param name="ranges" as="element(mets:div)*" select="tail($ranges)"/>
+          <xsl:with-param name="canvases" as="element(mets:div)*" select="$canvases[not(. &lt;&lt; $firstCanvasInRange)]"/>
+        </xsl:call-template>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template name="fn:image-dimensions" as="map(xs:string, xs:integer)">
