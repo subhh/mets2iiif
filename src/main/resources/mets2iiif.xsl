@@ -52,6 +52,11 @@
   <xsl:template match="mets:mets">
     <xsl:variable name="entity" as="element(json:map)?">
       <xsl:choose>
+        <xsl:when test="$entityType eq 'Range'">
+          <xsl:call-template name="Range">
+            <xsl:with-param name="rangeId" as="xs:string" select="$entityId"/>
+          </xsl:call-template>
+        </xsl:when>
         <xsl:when test="$entityType eq 'Canvas'">
           <xsl:call-template name="Canvas">
             <xsl:with-param name="canvasId" as="xs:string" select="$entityId"/>
@@ -93,6 +98,9 @@
         <json:string key="@id">{$links/dv:presentation}</json:string>
         <json:string key="format">text/html</json:string>
       </json:map>
+      <json:array key="structures">
+        <xsl:apply-templates select="mets:structMap[@TYPE = 'LOGICAL']"/>
+      </json:array>
       <json:array key="sequences">
         <xsl:apply-templates select="mets:structMap/mets:div[@TYPE = 'physSequence']"/>
       </json:array>
@@ -167,6 +175,29 @@
           <json:string key="on">{resolve-uri('canvas/' || @ID, $manifestUrl)}</json:string>
         </json:map>
       </json:array>
+    </json:map>
+  </xsl:template>
+
+  <!-- Return a single Range -->
+  <xsl:template name="Range" as="element(json:map)?">
+    <xsl:param name="rangeId" as="xs:string" required="yes"/>
+    <xsl:apply-templates select="key('Range', $rangeId)">
+      <xsl:with-param name="provide-context" as="xs:boolean" select="true()"/>
+    </xsl:apply-templates>
+  </xsl:template>
+
+  <xsl:template match="mets:div[ancestor::mets:structMap[@TYPE = 'LOGICAL']]">
+    <xsl:param name="provide-context" as="xs:boolean" select="false()"/>
+    <xsl:param name="provide-members" as="xs:boolean" select="true()"/>
+    <json:map>
+      <xsl:if test="$provide-context">
+        <json:string key="@context">http://iiif.io/api/presentation/2/context.json</json:string>
+      </xsl:if>
+      <json:string key="@id">{resolve-uri('range/' || @ID, $manifestUrl)}</json:string>
+      <json:string key="@type">sc:Range</json:string>
+      <xsl:if test="$provide-members">
+        <json:array key="members"/>
+      </xsl:if>
     </json:map>
   </xsl:template>
 
