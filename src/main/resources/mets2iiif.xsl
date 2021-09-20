@@ -25,6 +25,8 @@
   <xsl:key name="Range" match="mets:div[ancestor::mets:structMap[@TYPE = 'LOGICAL']]" use="@ID"/>
   <xsl:key name="Mix" match="mix:mix" use="ancestor::mets:techMD/@ID"/>
 
+  <xsl:key name="smLink" match="mets:smLink" use="@xlink:from"/>
+
   <xsl:variable name="properties" as="element(rdf:Property)+">
     <rdf:Property rdf:about="http://purl.org/dc/elements/1.1/identifier">
       <rdfs:label xml:lang="en">Shelfmark</rdfs:label>
@@ -310,5 +312,11 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
+
+  <xsl:function name="fn:covered-canvas" as="element(mets:div)+">
+    <xsl:param name="range" as="element(mets:div)"/>
+    <xsl:variable name="canvasId" as="xs:string+" select="key('smLink', @ID, root($range))"/>
+    <xsl:sequence select="key('Canvas', $canvasId, root($range))"/>
+  </xsl:function>
 
 </xsl:transform>
