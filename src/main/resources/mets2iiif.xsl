@@ -315,7 +315,7 @@
 
   <xsl:function name="fn:covered-canvas" as="element(mets:div)+">
     <xsl:param name="range" as="element(mets:div)"/>
-    <xsl:variable name="canvasId" as="xs:string+" select="key('smLink', @ID, root($range))"/>
+    <xsl:variable name="canvasId" as="xs:string+" select="key('smLink', $range//@ID, root($range))"/>
     <xsl:sequence select="key('Canvas', $canvasId, root($range))"/>
   </xsl:function>
 
