@@ -46,7 +46,7 @@
     </rdf:Property>
   </xsl:variable>
 
-  <xsl:variable name="description" as="element(mods:mods)" select="/mets:mets/mets:dmdSec[@ID = /mets:mets/mets:structMap[@TYPE = 'LOGICAL']/mets:div/@DMDID]//mods:mods"/>
+  <xsl:variable name="description" as="element(mods:mods)" select="/mets:mets/mets:dmdSec[@ID = (/mets:mets/mets:structMap[@TYPE = 'LOGICAL']//mets:div/@DMDID)[1]]//mods:mods"/>
   <xsl:variable name="manifestUrl" as="xs:string" select="$description/mods:location/mods:url[@displayLabel = 'IIIF Manifest']"/>
   <xsl:variable name="rights" as="element(dv:rights)" select="//dv:rights"/>
   <xsl:variable name="links" as="element(dv:links)" select="//dv:links"/>
