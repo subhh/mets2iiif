@@ -289,7 +289,8 @@
         </json:map>
       </xsl:if>
       <!-- Datum -->
-      <xsl:apply-templates select="mods:originInfo" mode="metadata"/>
+      <xsl:apply-templates mode="metadata"
+                           select="(mods:originInfo[@eventType = 'production'], mods:originInfo[@eventType = 'publication'], mods:originInfo[not(@eventType)])[1]"/>
     </json:array>
   </xsl:template>
 
@@ -316,14 +317,36 @@
   </xsl:template>
 
   <xsl:template match="mods:originInfo" mode="metadata" as="element(json:map)">
-    <json:map>
-      <xsl:call-template name="fn:metadata-label">
-        <xsl:with-param name="property" as="xs:string">http://purl.org/dc/elements/1.1/date</xsl:with-param>
-      </xsl:call-template>
-      <json:string key="value">
-        <xsl:value-of select="mods:dateIssued"/>
-      </json:string>
-    </json:map>
+    <xsl:variable name="date" as="element()*">
+      <xsl:choose>
+        <xsl:when test="mods:dateIssued">
+          <xsl:sequence select="mods:dateIssued"/>
+        </xsl:when>
+        <xsl:when test="mods:dateCreated">
+          <xsl:sequence select="mods:dateCreated"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:sequence select="()"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:if test="exists($date)">
+      <json:map>
+        <xsl:call-template name="fn:metadata-label">
+          <xsl:with-param name="property" as="xs:string">http://purl.org/dc/elements/1.1/date</xsl:with-param>
+        </xsl:call-template>
+        <json:string key="value">
+          <xsl:choose>
+            <xsl:when test="$date[@point = 'start'] or $date[@point = 'end']">
+              <xsl:value-of select="concat($date[@point = 'start'], '–', $date[@point = 'end'])"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="$date[1]"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </json:string>
+      </json:map>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template name="fn:metadata-label" as="element()">
@@ -338,7 +361,7 @@
                 <xsl:value-of select="@xml:lang"/>
               </json:string>
               <json:string key="@value">
-                <xsl:value-of select="."/>
+                <xsl:value-of select="normalize-space(.)"/>
               </json:string>
             </json:map>
           </xsl:for-each>
@@ -346,7 +369,7 @@
       </xsl:when>
       <xsl:otherwise>
         <json:string key="label">
-          <xsl:value-of select="$property"/>
+          <xsl:value-of select="normalize-space($property)"/>
         </json:string>
       </xsl:otherwise>
     </xsl:choose>
