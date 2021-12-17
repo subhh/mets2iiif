@@ -251,7 +251,7 @@
   </xsl:template>
 
   <xsl:template name="fn:manifest-label" as="xs:string">
-    <xsl:value-of separator=", " select="($description/mods:location/mods:physicalLocation, $description/mods:location/mods:shelfLocator)"/>
+    <xsl:value-of separator=", " select="($description/mods:location/mods:physicalLocation, $description/mods:location/mods:shelfLocator) ! normalize-space()"/>
   </xsl:template>
 
   <xsl:template mode="metadata" match="mods:mods" as="element(json:array)">
