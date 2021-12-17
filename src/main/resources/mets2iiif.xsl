@@ -265,7 +265,7 @@
         <xsl:variable name="authors" as="element(json:string)+">
           <xsl:for-each select="mods:name[mods:role/mods:roleTerm/string() eq 'aut']">
             <json:string>
-              <xsl:value-of select="mods:displayForm"/>
+              <xsl:value-of select="normalize-space(mods:displayForm)"/>
             </json:string>
           </xsl:for-each>
         </xsl:variable>
@@ -300,7 +300,7 @@
         <xsl:with-param name="property" as="xs:string">http://purl.org/dc/elements/1.1/title</xsl:with-param>
       </xsl:call-template>
       <json:string key="value">
-        <xsl:value-of select="(mods:title, mods:subTitle)" separator=" : "/>
+        <xsl:value-of select="(mods:title, mods:subTitle) ! normalize-space()" separator=" : "/>
       </json:string>
     </json:map>
   </xsl:template>
@@ -311,7 +311,7 @@
         <xsl:with-param name="property" as="xs:string">http://purl.org/dc/elements/1.1/identifier</xsl:with-param>
       </xsl:call-template>
       <json:string key="value">
-        <xsl:value-of select="(mods:physicalLocation, mods:shelfLocator)" separator=", "/>
+        <xsl:value-of select="(mods:physicalLocation, mods:shelfLocator) ! normalize-space()" separator=", "/>
       </json:string>
     </json:map>
   </xsl:template>
@@ -338,10 +338,10 @@
         <json:string key="value">
           <xsl:choose>
             <xsl:when test="$date[@point = 'start'] or $date[@point = 'end']">
-              <xsl:value-of select="concat($date[@point = 'start'], '–', $date[@point = 'end'])"/>
+              <xsl:value-of select="normalize-space(concat($date[@point = 'start'], '–', $date[@point = 'end']))"/>
             </xsl:when>
             <xsl:otherwise>
-              <xsl:value-of select="$date[1]"/>
+              <xsl:value-of select="normalize-space($date[1])"/>
             </xsl:otherwise>
           </xsl:choose>
         </json:string>
