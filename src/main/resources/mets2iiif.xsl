@@ -47,39 +47,46 @@
   </xsl:variable>
 
   <xsl:variable name="description" as="element(mods:mods)" select="/mets:mets/mets:dmdSec[@ID = (/mets:mets/mets:structMap[@TYPE = 'LOGICAL']//mets:div/@DMDID)[1]]//mods:mods"/>
-  <xsl:variable name="manifestUrl" as="xs:string" select="$description/mods:location/mods:url[@displayLabel = 'IIIF Manifest']"/>
+  <xsl:variable name="manifestUrl" as="xs:string?" select="$description/mods:location/mods:url[@displayLabel = 'IIIF Manifest']"/>
   <xsl:variable name="rights" as="element(dv:rights)" select="//dv:rights"/>
   <xsl:variable name="links" as="element(dv:links)" select="//dv:links"/>
 
   <xsl:template match="mets:mets">
-    <xsl:variable name="entity" as="element(json:map)?">
-      <xsl:choose>
-        <xsl:when test="$entityType eq 'Range'">
-          <xsl:call-template name="Range">
-            <xsl:with-param name="rangeId" as="xs:string" select="$entityId"/>
-          </xsl:call-template>
-        </xsl:when>
-        <xsl:when test="$entityType eq 'Canvas'">
-          <xsl:call-template name="Canvas">
-            <xsl:with-param name="canvasId" as="xs:string" select="$entityId"/>
-          </xsl:call-template>
-        </xsl:when>
-        <xsl:when test="$entityType eq 'Sequence'">
-          <xsl:call-template name="Sequence">
-            <xsl:with-param name="sequenceId" as="xs:string" select="$entityId"/>
-          </xsl:call-template>
-        </xsl:when>
-        <xsl:when test="$entityType eq 'Manifest'">
-          <xsl:call-template name="Manifest"/>
-        </xsl:when>
-      </xsl:choose>
-    </xsl:variable>
     <xsl:choose>
-      <xsl:when test="empty($entity)">
-        <error/>
+      <xsl:when test="$manifestUrl">
+        <xsl:variable name="entity" as="element(json:map)?">
+          <xsl:choose>
+            <xsl:when test="$entityType eq 'Range'">
+              <xsl:call-template name="Range">
+                <xsl:with-param name="rangeId" as="xs:string" select="$entityId"/>
+              </xsl:call-template>
+            </xsl:when>
+            <xsl:when test="$entityType eq 'Canvas'">
+              <xsl:call-template name="Canvas">
+                <xsl:with-param name="canvasId" as="xs:string" select="$entityId"/>
+              </xsl:call-template>
+            </xsl:when>
+            <xsl:when test="$entityType eq 'Sequence'">
+              <xsl:call-template name="Sequence">
+                <xsl:with-param name="sequenceId" as="xs:string" select="$entityId"/>
+              </xsl:call-template>
+            </xsl:when>
+            <xsl:when test="$entityType eq 'Manifest'">
+              <xsl:call-template name="Manifest"/>
+            </xsl:when>
+          </xsl:choose>
+        </xsl:variable>
+        <xsl:choose>
+          <xsl:when test="empty($entity)">
+            <error/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:sequence select="$entity"/>
+          </xsl:otherwise>
+        </xsl:choose>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:sequence select="$entity"/>
+        <error/>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
