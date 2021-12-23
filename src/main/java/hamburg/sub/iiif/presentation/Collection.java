@@ -25,6 +25,7 @@
 package hamburg.sub.iiif.presentation;
 
 import java.io.InputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 import javax.ws.rs.GET;
@@ -55,8 +56,19 @@ public final class Collection
     public Response getToplevelCollection ()
     {
         InputStream resource = getClass().getResourceAsStream("/collection.json");
+        ByteArrayOutputStream data = new ByteArrayOutputStream();
+
         try {
-            return Response.ok(resource).build();
+            int chr;
+            do {
+                chr = resource.read();
+                if (chr != -1) {
+                    data.write(chr);
+                }
+            } while (chr != -1);
+            return Response.ok(data.toByteArray()).build();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         } finally {
             try {
                 if (resource != null) {
