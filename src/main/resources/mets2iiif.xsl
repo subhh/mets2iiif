@@ -131,7 +131,7 @@
         <json:string key="@context">http://iiif.io/api/presentation/2/context.json</json:string>
         <json:string key="within">{$manifestUrl}</json:string>
       </xsl:if>
-      <json:string key="@id">{resolve-uri('sequence/' || @ID, $manifestUrl)}</json:string>
+      <json:string key="@id">{fn:sequence-uri(@ID, $manifestUrl)}</json:string>
       <json:string key="@type">sc:Sequence</json:string>
       <json:array key="canvases">
         <xsl:apply-templates select="mets:div[@TYPE = 'page']"/>
@@ -158,9 +158,9 @@
     <json:map>
       <xsl:if test="$provide-context">
         <json:string key="@context">http://iiif.io/api/presentation/2/context.json</json:string>
-        <json:string key="within">{resolve-uri('sequence/' || ancestor::mets:div[@TYPE = 'physSequence']/@ID, $manifestUrl)}</json:string>
+        <json:string key="within">{fn:sequence-uri(ancestor::mets:div[@TYPE = 'physSequence']/@ID, $manifestUrl)}</json:string>
       </xsl:if>
-      <json:string key="@id">{resolve-uri('canvas/' || @ID, $manifestUrl)}</json:string>
+      <json:string key="@id">{fn:canvas-uri(@ID, $manifestUrl)}</json:string>
       <json:string key="@type">sc:Canvas</json:string>
       <json:string key="label">{(@ORDERLABEL[. ne ' - '], @ORDER, position())[1]}</json:string>
       <json:number key="width">{$dimensions?width}</json:number>
@@ -181,7 +181,7 @@
             <json:number key="width">{$dimensions?width}</json:number>
             <json:number key="height">{$dimensions?height}</json:number>
           </json:map>
-          <json:string key="on">{resolve-uri('canvas/' || @ID, $manifestUrl)}</json:string>
+          <json:string key="on">{fn:canvas-uri(@ID, $manifestUrl)}</json:string>
         </json:map>
       </json:array>
     </json:map>
@@ -201,7 +201,7 @@
       <xsl:if test="$provide-context">
         <json:string key="@context">http://iiif.io/api/presentation/2/context.json</json:string>
       </xsl:if>
-      <json:string key="@id">{resolve-uri('range/' || @ID, $manifestUrl)}</json:string>
+      <json:string key="@id">{fn:range-uri(@ID, $manifestUrl)}</json:string>
       <json:string key="@type">sc:Range</json:string>
     </json:map>
   </xsl:template>
@@ -338,5 +338,23 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
+
+  <xsl:function name="fn:canvas-uri" as="xs:string">
+    <xsl:param name="id" as="xs:string"/>
+    <xsl:param name="baseUrl" as="xs:string"/>
+    <xsl:sequence select="resolve-uri('canvas/' || $id, $baseUrl)"/>
+  </xsl:function>
+
+  <xsl:function name="fn:sequence-uri" as="xs:string">
+    <xsl:param name="id" as="xs:string"/>
+    <xsl:param name="baseUrl" as="xs:string"/>
+    <xsl:sequence select="resolve-uri('sequence/' || $id, $baseUrl)"/>
+  </xsl:function>
+
+  <xsl:function name="fn:range-uri" as="xs:string">
+    <xsl:param name="id" as="xs:string"/>
+    <xsl:param name="baseUrl" as="xs:string"/>
+    <xsl:sequence select="resolve-uri('range/' || $id, $baseUrl)"/>
+  </xsl:function>
 
 </xsl:transform>
