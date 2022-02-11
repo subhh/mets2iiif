@@ -339,10 +339,4 @@
     </xsl:choose>
   </xsl:template>
 
-  <xsl:function name="fn:covered-canvas" as="element(mets:div)+">
-    <xsl:param name="range" as="element(mets:div)"/>
-    <xsl:variable name="canvasId" as="xs:string+" select="key('smLink', $range//@ID, root($range))/@xlink:to"/>
-    <xsl:sequence select="key('Canvas', $canvasId, root($range))"/>
-  </xsl:function>
-
 </xsl:transform>
