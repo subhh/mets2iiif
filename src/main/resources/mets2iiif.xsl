@@ -201,8 +201,12 @@
       <xsl:if test="$provide-context">
         <json:string key="@context">http://iiif.io/api/presentation/2/context.json</json:string>
       </xsl:if>
+      <xsl:if test="parent::mets:structMap">
+        <json:string key="viewingHint">top</json:string>
+      </xsl:if>
       <json:string key="@id">{fn:range-uri(@ID, $manifestUrl)}</json:string>
       <json:string key="@type">sc:Range</json:string>
+      <json:string key="label">{fn:range-label(.)}</json:string>
     </json:map>
   </xsl:template>
 
@@ -355,6 +359,11 @@
     <xsl:param name="id" as="xs:string"/>
     <xsl:param name="baseUrl" as="xs:string"/>
     <xsl:sequence select="resolve-uri('range/' || $id, $baseUrl)"/>
+  </xsl:function>
+
+  <xsl:function name="fn:range-label" as="xs:string">
+    <xsl:param name="range" as="element(mets:div)"/>
+    <xsl:sequence select="($range/@LABEL, $range/@TYPE, '-')[1]"/>
   </xsl:function>
 
 </xsl:transform>
