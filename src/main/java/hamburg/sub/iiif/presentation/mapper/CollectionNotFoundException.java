@@ -24,28 +24,16 @@
 
 package hamburg.sub.iiif.presentation.mapper;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-
 import net.jcip.annotations.ThreadSafe;
 
 /**
- * A bridge to the digital library environment.
+ * Thrown if the requested collection is empty or not found.
  */
 @ThreadSafe
-public final class Environment
+public final class CollectionNotFoundException extends Exception
 {
-    public URL resolveSourceUrl (final String objectId) throws MalformedURLException
+    public CollectionNotFoundException (final String message)
     {
-        return new URL("http://mets.sub.uni-hamburg.de/kitodo/" + objectId);
-    }
-
-    public URL resolveCollectionSourceUrl (final Integer page)
-    {
-        if (page == null) {
-            return getClass().getResource("/collection-description.xml");
-        } else {
-            return getClass().getResource("/collection.xml");
-        }
+        super(message);
     }
 }

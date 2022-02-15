@@ -28,14 +28,20 @@ import java.io.InputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
+import javax.json.JsonObjectBuilder;
 import javax.ws.rs.GET;
 import javax.ws.rs.OPTIONS;
 
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 
 import javax.ws.rs.core.Response;
+import javax.ws.rs.core.Response.ResponseBuilder;
+import javax.ws.rs.core.Response.Status;
 
+import hamburg.sub.iiif.presentation.mapper.CollectionNotFoundException;
+import hamburg.sub.iiif.presentation.mapper.CollectionProvider;
 import net.jcip.annotations.ThreadSafe;
 
 /**
@@ -45,6 +51,31 @@ import net.jcip.annotations.ThreadSafe;
 @Path("collection")
 public final class Collection
 {
+    private final CollectionProvider collections = new CollectionProvider();
+
+    @OPTIONS
+    @Path("all")
+    public Response getCollectionCORS ()
+    {
+        return Response.noContent().build();
+    }
+
+    @GET
+    @Path("all")
+    @Produces({"application/ld+json", "application/json"})
+    public Response getCollection ()
+    {
+        return getCollectionResponse(null);
+    }
+
+    @GET
+    @Path("all/{page : [0-9]+}")
+    @Produces({"application/ld+json", "application/json"})
+    public Response getCollection (@PathParam("page") final Integer page)
+    {
+        return getCollectionResponse(page);
+    }
+
     @OPTIONS
     public Response getToplevelCollectionCORS ()
     {
@@ -78,5 +109,17 @@ public final class Collection
                 throw new RuntimeException(e);
             }
         }
+    }
+
+    private Response getCollectionResponse (final Integer page)
+    {
+        ResponseBuilder response;
+        try {
+            JsonObjectBuilder collection = collections.getCollection(page);
+            response = Response.ok(collection.build().toString());
+        } catch (CollectionNotFoundException | IOException e) {
+            response = Response.status(Status.NOT_FOUND);
+        }
+        return response.build();
     }
 }

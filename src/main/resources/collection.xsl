@@ -7,7 +7,7 @@
 
   <xsl:output indent="yes"/>
 
-  <xsl:variable name="itemsPerPage" as="xs:integer" select="25"/>
+  <xsl:param name="itemsPerPage" as="xs:integer" required="yes"/>
 
   <xsl:variable name="collectionUri" as="xs:string">https://iiif.sub.uni-hamburg.de/collection/all</xsl:variable>
   <xsl:variable name="collectionLabel" as="xs:string">Digitalisierte Bestände</xsl:variable>
