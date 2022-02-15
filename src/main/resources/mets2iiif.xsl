@@ -27,7 +27,7 @@
 
   <xsl:key name="smLink" match="mets:smLink" use="@xlink:from"/>
 
-  <xsl:variable name="properties" as="element()+">
+  <xsl:variable name="vocab" as="element()+">
     <rdf:Property rdf:about="http://purl.org/dc/elements/1.1/identifier">
       <rdfs:label xml:lang="en">Shelfmark</rdfs:label>
       <rdfs:label xml:lang="de">Signatur</rdfs:label>
@@ -344,9 +344,9 @@
   <xsl:template name="fn:label" as="element()">
     <xsl:param name="property" as="xs:string" required="true"/>
     <xsl:choose>
-      <xsl:when test="$properties[@rdf:about eq $property]">
+      <xsl:when test="$vocab[@rdf:about eq $property]">
         <json:array key="label">
-          <xsl:for-each select="$properties[@rdf:about eq $property]/rdfs:label">
+          <xsl:for-each select="$vocab[@rdf:about eq $property]/rdfs:label">
             <xsl:sort select="@xml:lang"/>
             <json:map>
               <json:string key="@language">
