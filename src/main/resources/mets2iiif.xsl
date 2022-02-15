@@ -207,7 +207,22 @@
       <json:string key="@id">{fn:range-uri(@ID, $manifestUrl)}</json:string>
       <json:string key="@type">sc:Range</json:string>
       <json:string key="label">{fn:range-label(.)}</json:string>
+      <xsl:where-populated>
+        <json:array key="ranges">
+          <xsl:for-each select="mets:div">
+            <json:string>{fn:range-uri(@ID, $manifestUrl)}</json:string>
+          </xsl:for-each>
+        </json:array>
+      </xsl:where-populated>
+      <xsl:where-populated>
+        <json:array key="canvases">
+          <xsl:for-each select="key('smLink', @ID)">
+            <json:string>{fn:canvas-uri(@xlink:to, $manifestUrl)}</json:string>
+          </xsl:for-each>
+        </json:array>
+      </xsl:where-populated>
     </json:map>
+    <xsl:next-match/>
   </xsl:template>
 
   <xsl:template name="fn:image-dimensions" as="map(xs:string, xs:integer)">
