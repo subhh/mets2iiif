@@ -27,23 +27,25 @@
 
   <xsl:key name="smLink" match="mets:smLink" use="@xlink:from"/>
 
-  <xsl:variable name="vocab" as="element()+">
-    <rdf:Property rdf:about="http://purl.org/dc/elements/1.1/identifier">
-      <rdfs:label xml:lang="en">Shelfmark</rdfs:label>
-      <rdfs:label xml:lang="de">Signatur</rdfs:label>
-    </rdf:Property>
-    <rdf:Property rdf:about="http://purl.org/dc/elements/1.1/title">
-      <rdfs:label xml:lang="en">Title</rdfs:label>
-      <rdfs:label xml:lang="de">Titel</rdfs:label>
-    </rdf:Property>
-    <rdf:Property rdf:about="http://purl.org/dc/elements/1.1/creator">
-      <rdfs:label xml:lang="en">Author</rdfs:label>
-      <rdfs:label xml:lang="de">Verfasser</rdfs:label>
-    </rdf:Property>
-    <rdf:Property rdf:about="http://purl.org/dc/elements/1.1/date">
-      <rdfs:label xml:lang="en">Date</rdfs:label>
-      <rdfs:label xml:lang="de">Datum</rdfs:label>
-    </rdf:Property>
+  <xsl:variable name="vocab" as="element(rdf:RDF)">
+    <rdf:RDF>
+      <rdf:Property rdf:about="http://purl.org/dc/elements/1.1/identifier">
+        <rdfs:label xml:lang="en">Shelfmark</rdfs:label>
+        <rdfs:label xml:lang="de">Signatur</rdfs:label>
+      </rdf:Property>
+      <rdf:Property rdf:about="http://purl.org/dc/elements/1.1/title">
+        <rdfs:label xml:lang="en">Title</rdfs:label>
+        <rdfs:label xml:lang="de">Titel</rdfs:label>
+      </rdf:Property>
+      <rdf:Property rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <rdfs:label xml:lang="en">Author</rdfs:label>
+        <rdfs:label xml:lang="de">Verfasser</rdfs:label>
+      </rdf:Property>
+      <rdf:Property rdf:about="http://purl.org/dc/elements/1.1/date">
+        <rdfs:label xml:lang="en">Date</rdfs:label>
+        <rdfs:label xml:lang="de">Datum</rdfs:label>
+      </rdf:Property>
+    </rdf:RDF>
   </xsl:variable>
 
   <xsl:variable name="description" as="element(mods:mods)" select="/mets:mets/mets:dmdSec[@ID = (/mets:mets/mets:structMap[@TYPE = 'LOGICAL']//mets:div/@DMDID)[1]]//mods:mods"/>
@@ -344,9 +346,9 @@
   <xsl:template name="fn:label" as="element()">
     <xsl:param name="property" as="xs:string" required="true"/>
     <xsl:choose>
-      <xsl:when test="$vocab[@rdf:about eq $property]">
+      <xsl:when test="$vocab/rdf:*[@rdf:about eq $property]">
         <json:array key="label">
-          <xsl:for-each select="$vocab[@rdf:about eq $property]/rdfs:label">
+          <xsl:for-each select="$vocab/rdf:*[@rdf:about eq $property]/rdfs:label">
             <xsl:sort select="@xml:lang"/>
             <json:map>
               <json:string key="@language">
