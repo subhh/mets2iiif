@@ -206,7 +206,16 @@
       </xsl:if>
       <json:string key="@id">{fn:range-uri(@ID, $manifestUrl)}</json:string>
       <json:string key="@type">sc:Range</json:string>
-      <json:string key="label">{fn:range-label(.)}</json:string>
+      <xsl:choose>
+        <xsl:when test="normalize-space(@LABEL)">
+          <json:string key="label">{normalize-space(@LABEL)}</json:string>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:call-template name="fn:label">
+            <xsl:with-param name="property" as="xs:string" select="concat('http://iiif.sub.uni-hamburg.de/vocab#', @TYPE)"/>
+          </xsl:call-template>
+        </xsl:otherwise>
+      </xsl:choose>
       <xsl:where-populated>
         <json:array key="ranges">
           <xsl:for-each select="mets:div">
