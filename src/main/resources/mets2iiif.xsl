@@ -27,7 +27,7 @@
 
   <xsl:key name="smLink" match="mets:smLink" use="@xlink:from"/>
 
-  <xsl:variable name="properties" as="element(rdf:Property)+">
+  <xsl:variable name="properties" as="element()+">
     <rdf:Property rdf:about="http://purl.org/dc/elements/1.1/identifier">
       <rdfs:label xml:lang="en">Shelfmark</rdfs:label>
       <rdfs:label xml:lang="de">Signatur</rdfs:label>
