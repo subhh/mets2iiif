@@ -55,7 +55,7 @@ public final class EntityProvider
 
     public JsonObjectBuilder getEntity (final String objectId, final EntityType entityType, final String entityId) throws IOException, EntityNotFoundException
     {
-        URL sourceUrl = environment.resolveSourceUrl(objectId);
+        URL sourceUrl = environment.resolveEntitySourceUrl(objectId);
 
         Source source = new StreamSource(sourceUrl.openStream());
         Element entityElement = getEntityElement(source, entityType, entityId);

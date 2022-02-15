@@ -35,7 +35,7 @@ import net.jcip.annotations.ThreadSafe;
 @ThreadSafe
 public final class Environment
 {
-    public URL resolveSourceUrl (final String objectId) throws MalformedURLException
+    public URL resolveEntitySourceUrl (final String objectId) throws MalformedURLException
     {
         return new URL("http://mets.sub.uni-hamburg.de/kitodo/" + objectId);
     }
