@@ -50,7 +50,7 @@ import net.jcip.annotations.ThreadSafe;
 public final class EntityProvider
 {
     private final JsonFactory jsonFactory = new JsonFactory();
-    private final TransformerProvider transformerProvider = new TransformerProvider();
+    private final TransformerProvider transformerProvider = new TransformerProvider("/mets2iiif.xsl");
     private final Environment environment = new Environment();
 
     public JsonObjectBuilder getEntity (final String objectId, final EntityType entityType, final String entityId) throws IOException, EntityNotFoundException
