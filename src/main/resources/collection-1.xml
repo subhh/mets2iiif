@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+
+<lst name="responseHeader">
+  <int name="status">0</int>
+  <int name="QTime">0</int>
+  <lst name="params">
+    <str name="q">*:*</str>
+    <arr name="fq">
+      <str>collection_usi:"Aus Nachlass Richard Dehmel"</str>
+      <str>iiifReference_usi:["" TO *]</str>
+    </arr>
+    <str name="wt">xml</str>
+  </lst>
+</lst>
+<result name="response" numFound="24" start="0">
+  <doc>
+    <str name="id">37054LOG_0000</str>
+    <int name="uid">37054</int>
+    <int name="page">1</int>
+    <str name="thumbnail">https://pic.sub.uni-hamburg.de/HANSb27512/150/0/00000001.tif</str>
+    <int name="partof">0</int>
+    <int name="root">0</int>
+    <str name="sid">LOG_0000</str>
+    <bool name="toplevel">true</bool>
+    <str name="type">letter</str>
+    <str name="title">Postkarte an Richard Dehmel</str>
+    <str name="record_id">HANSb27512</str>
+    <str name="purl">https://resolver.sub.uni-hamburg.de/kitodo/HANSb27512</str>
+    <str name="location">https://mets.sub.uni-hamburg.de/kitodo/HANSb27512</str>
+    <str name="urn">urn:nbn:de:gbv:18-5-HANSb275124</str>
+    <arr name="collection">
+      <str>Aus Nachlass Richard Dehmel</str>
+      <str>Brief</str>
+      <str>830 - Deutsche und verwandte Literaturen</str>
+    </arr>
+    <arr name="title_usi">
+      <str>Postkarte an Richard Dehmel</str>
+    </arr>
+    <str name="title_sorting">Postkarte an Richard Dehmel</str>
+    <arr name="author_usi">
+      <str>Zweig, Stefan</str>
+    </arr>
+    <str name="author_sorting">Zweig, Stefan</str>
+    <arr name="place_usu">
+      <str>Rangun</str>
+    </arr>
+    <str name="place_sorting">Rangun</str>
+    <arr name="year_usi">
+      <str>1909</str>
+    </arr>
+    <str name="year_sorting">1909</str>
+    <arr name="type_usi">
+      <str>letter</str>
+    </arr>
+    <arr name="collection_usi">
+      <str>Aus Nachlass Richard Dehmel</str>
+      <str>Brief</str>
+      <str>830 - Deutsche und verwandte Literaturen</str>
+    </arr>
+    <arr name="shelfmark_usi">
+      <str>DA : Pk-Album : V : 43</str>
+    </arr>
+    <str name="shelfmark_sorting">DA : Pk-Album : V : 43</str>
+    <arr name="DocLanguage_usi">
+      <str>ger</str>
+    </arr>
+    <arr name="iiifReference_usi">
+      <str>https://iiif.sub.uni-hamburg.de/object/HANSb27512/manifest</str>
+    </arr>
+    <str name="volume"/>
+    <str name="fulltext"/>
+    <date name="timestamp">2021-11-12T00:15:56.531Z</date></doc>
+  <doc>
+    <str name="id">37048LOG_0000</str>
+    <int name="uid">37048</int>
+    <int name="page">1</int>
+    <str name="thumbnail">https://pic.sub.uni-hamburg.de/HANSb27511/150/0/00000001.tif</str>
+    <int name="partof">0</int>
+    <int name="root">0</int>
+    <str name="sid">LOG_0000</str>
+    <bool name="toplevel">true</bool>
+    <str name="type">letter</str>
+    <str name="title">Postkarte an Richard Dehmel</str>
+    <str name="record_id">HANSb27511</str>
+    <str name="purl">https://resolver.sub.uni-hamburg.de/kitodo/HANSb27511</str>
+    <str name="location">https://mets.sub.uni-hamburg.de/kitodo/HANSb27511</str>
+    <str name="urn">urn:nbn:de:gbv:18-5-HANSb275116</str>
+    <arr name="collection">
+      <str>Aus Nachlass Richard Dehmel</str>
+      <str>Brief</str>
+      <str>830 - Deutsche und verwandte Literaturen</str>
+    </arr>
+    <arr name="title_usi">
+      <str>Postkarte an Richard Dehmel</str>
+    </arr>
+    <str name="title_sorting">Postkarte an Richard Dehmel</str>
+    <arr name="author_usi">
+      <str>Zweig, Stefan</str>
+    </arr>
+    <str name="author_sorting">Zweig, Stefan</str>
+    <arr name="place_usu">
+      <str>Mumbai</str>
+    </arr>
+    <str name="place_sorting">Mumbai</str>
+    <arr name="year_usi">
+      <str>1908</str>
+    </arr>
+    <str name="year_sorting">1908</str>
+    <arr name="type_usi">
+      <str>letter</str>
+    </arr>
+    <arr name="collection_usi">
+      <str>Aus Nachlass Richard Dehmel</str>
+      <str>Brief</str>
+      <str>830 - Deutsche und verwandte Literaturen</str>
+    </arr>
+    <arr name="shelfmark_usi">
+      <str>DA : Pk-Album : V : 25</str>
+    </arr>
+    <str name="shelfmark_sorting">DA : Pk-Album : V : 25</str>
+    <arr name="DocLanguage_usi">
+      <str>ger</str>
+    </arr>
+    <arr name="iiifReference_usi">
+      <str>https://iiif.sub.uni-hamburg.de/object/HANSb27511/manifest</str>
+    </arr>
+    <str name="volume"/>
+    <str name="fulltext"/>
+    <date name="timestamp">2021-11-12T01:17:28.686Z</date></doc>
+  <doc>
+    <str name="id">37082LOG_0000</str>
+    <int name="uid">37082</int>
+    <int name="page">1</int>
+    <str name="thumbnail">https://pic.sub.uni-hamburg.de/HANSb27507/150/0/00000001.tif</str>
+    <int name="partof">0</int>
+    <int name="root">0</int>
+    <str name="sid">LOG_0000</str>
+    <bool name="toplevel">true</bool>
+    <str name="type">letter</str>
+    <str name="title">Postkarte an Richard Dehmel</str>
+    <str name="record_id">HANSb27507</str>
+    <str name="purl">https://resolver.sub.uni-hamburg.de/kitodo/HANSb27507</str>
+    <str name="location">https://mets.sub.uni-hamburg.de/kitodo/HANSb27507</str>
+    <str name="urn">urn:nbn:de:gbv:18-5-HANSb275079</str>
+    <arr name="collection">
+      <str>Aus Nachlass Richard Dehmel</str>
+      <str>Brief</str>
+      <str>830 - Deutsche und verwandte Literaturen</str>
+    </arr>
+    <arr name="title_usi">
+      <str>Postkarte an Richard Dehmel</str>
+    </arr>
+    <str name="title_sorting">Postkarte an Richard Dehmel</str>
+    <arr name="author_usi">
+      <str>Zweig, Stefan</str>
+      <str>Verhaeren, Émile</str>
+    </arr>
+    <str name="author_sorting">Zweig, Stefan</str>
+    <arr name="place_usu">
+      <str>Lüttich</str>
+    </arr>
+    <str name="place_sorting">Lüttich</str>
+    <arr name="year_usi">
+      <str>o.D.</str>
+    </arr>
+    <str name="year_sorting">-50</str>
+    <arr name="type_usi">
+      <str>letter</str>
+    </arr>
+    <arr name="collection_usi">
+      <str>Aus Nachlass Richard Dehmel</str>
+      <str>Brief</str>
+      <str>830 - Deutsche und verwandte Literaturen</str>
+    </arr>
+    <arr name="shelfmark_usi">
+      <str>DA : Pk-Album : IV : 409</str>
+    </arr>
+    <str name="shelfmark_sorting">DA : Pk-Album : IV : 409</str>
+    <arr name="DocLanguage_usi">
+      <str>ger</str>
+    </arr>
+    <arr name="iiifReference_usi">
+      <str>https://iiif.sub.uni-hamburg.de/object/HANSb27507/manifest</str>
+    </arr>
+    <str name="volume"/>
+    <str name="fulltext"/>
+    <date name="timestamp">2021-11-12T03:09:15.641Z</date></doc>
+  <doc>
+    <str name="id">41970LOG_0000</str>
+    <int name="uid">41970</int>
+    <int name="page">1</int>
+    <str name="thumbnail">https://pic.sub.uni-hamburg.de/HANSb313010/150/0/00000001.tif</str>
+    <int name="partof">0</int>
+    <int name="root">0</int>
+    <str name="sid">LOG_0000</str>
+    <bool name="toplevel">true</bool>
+    <str name="type">letter</str>
+    <str name="title">Postkarte an Richard Dehmel u. Ida Dehmel</str>
+    <str name="record_id">HANSb313010</str>
+    <str name="purl">https://resolver.sub.uni-hamburg.de/kitodo/HANSb313010</str>
+    <str name="location">https://mets.sub.uni-hamburg.de/kitodo/HANSb313010</str>
+    <str name="urn">urn:nbn:de:gbv:18-5-HANSb3130108</str>
+    <arr name="collection">
+      <str>Aus Nachlass Richard Dehmel</str>
+      <str>Brief</str>
+      <str>830 - Deutsche und verwandte Literaturen</str>
+    </arr>
+    <arr name="title_usi">
+      <str>Postkarte an Richard Dehmel u. Ida Dehmel</str>
+    </arr>
+    <str name="title_sorting">Postkarte an Richard Dehmel u. Ida Dehmel</str>
+    <arr name="author_usi">
+      <str>Behrens, Peter</str>
+    </arr>
+    <str name="author_sorting">Behrens, Peter</str>
+    <arr name="place_usu">
+      <str>Düsseldorf</str>
+    </arr>
+    <str name="place_sorting">Düsseldorf</str>
+    <arr name="year_usi">
+      <str>1903</str>
+    </arr>
+    <str name="year_sorting">1903</str>
+    <arr name="type_usi">
+      <str>letter</str>
+    </arr>
+    <arr name="collection_usi">
+      <str>Aus Nachlass Richard Dehmel</str>
+      <str>Brief</str>
+      <str>830 - Deutsche und verwandte Literaturen</str>
+    </arr>
+    <arr name="shelfmark_usi">
+      <str>DA : Br : B : 323</str>
+    </arr>
+    <str name="shelfmark_sorting">DA : Br : B : 323</str>
+    <arr name="DocLanguage_usi">
+      <str>ger</str>
+    </arr>
+    <arr name="iiifReference_usi">
+      <str>https://iiif.sub.uni-hamburg.de/object/HANSb313010/manifest</str>
+    </arr>
+    <str name="volume"/>
+    <str name="fulltext"/>
+    <date name="timestamp">2021-11-12T12:16:24.123Z</date></doc>
+  <doc>
+    <str name="id">5861LOG_0000</str>
+    <int name="uid">5861</int>
+    <int name="page">1</int>
+    <str name="thumbnail">https://pic.sub.uni-hamburg.de/HANSb312817/150/0/00000001.tif</str>
+    <int name="partof">0</int>
+    <int name="root">0</int>
+    <str name="sid">LOG_0000</str>
+    <bool name="toplevel">true</bool>
+    <str name="type">letter</str>
+    <str name="title">Brief an Peter Behrens</str>
+    <str name="record_id">HANSb312817</str>
+    <str name="purl">https://resolver.sub.uni-hamburg.de/kitodo/HANSb312817</str>
+    <str name="location">https://mets.sub.uni-hamburg.de/kitodo/HANSb312817</str>
+    <str name="urn">urn:nbn:de:gbv:18-5-HANSb3128174</str>
+    <arr name="collection">
+      <str>Aus Nachlass Richard Dehmel</str>
+      <str>Brief</str>
+      <str>830 - Deutsche und verwandte Literaturen</str>
+    </arr>
+    <arr name="title_usi">
+      <str>Brief an Peter Behrens</str>
+    </arr>
+    <str name="title_sorting">Brief an Peter Behrens</str>
+    <arr name="author_usi">
+      <str>Dehmel, Richard</str>
+      <str>Dehmel, Ida</str>
+    </arr>
+    <str name="author_sorting">Dehmel, Richard</str>
+    <arr name="place_usu">
+      <str>Spetzgart</str>
+    </arr>
+    <str name="place_sorting">Spetzgart</str>
+    <arr name="year_usi">
+      <str>1900</str>
+    </arr>
+    <str name="year_sorting">1900</str>
+    <arr name="type_usi">
+      <str>letter</str>
+    </arr>
+    <arr name="collection_usi">
+      <str>Aus Nachlass Richard Dehmel</str>
+      <str>Brief</str>
+      <str>830 - Deutsche und verwandte Literaturen</str>
+    </arr>
+    <arr name="shelfmark_usi">
+      <str>DA : Br : D : 1988</str>
+    </arr>
+    <str name="shelfmark_sorting">DA : Br : D : 1988</str>
+    <arr name="DocLanguage_usi">
+      <str>ger</str>
+    </arr>
+    <arr name="iiifReference_usi">
+      <str>https://iiif.sub.uni-hamburg.de/object/HANSb312817/manifest</str>
+    </arr>
+    <str name="volume"/>
+    <str name="fulltext"/>
+    <date name="timestamp">2021-11-12T12:16:22.162Z</date></doc>
+  <doc>
+    <str name="id">41936LOG_0000</str>
+    <int name="uid">41936</int>
+    <int name="page">1</int>
+    <str name="thumbnail">https://pic.sub.uni-hamburg.de/HANSb312993/150/0/00000001.tif</str>
+    <int name="partof">0</int>
+    <int name="root">0</int>
+    <str name="sid">LOG_0000</str>
+    <bool name="toplevel">true</bool>
+    <str name="type">letter</str>
+    <str name="title">Postkarte an Richard Dehmel</str>
+    <str name="record_id">HANSb312993</str>
+    <str name="purl">https://resolver.sub.uni-hamburg.de/kitodo/HANSb312993</str>
+    <str name="location">https://mets.sub.uni-hamburg.de/kitodo/HANSb312993</str>
+    <str name="urn">urn:nbn:de:gbv:18-5-HANSb3129938</str>
+    <arr name="collection">
+      <str>Aus Nachlass Richard Dehmel</str>
+      <str>Brief</str>
+      <str>830 - Deutsche und verwandte Literaturen</str>
+    </arr>
+    <arr name="title_usi">
+      <str>Postkarte an Richard Dehmel</str>
+    </arr>
+    <str name="title_sorting">Postkarte an Richard Dehmel</str>
+    <arr name="author_usi">
+      <str>Behrens, Peter</str>
+    </arr>
+    <str name="author_sorting">Behrens, Peter</str>
+    <arr name="place_usu">
+      <str>Darmstadt</str>
+    </arr>
+    <str name="place_sorting">Darmstadt</str>
+    <arr name="year_usi">
+      <str>1901</str>
+    </arr>
+    <str name="year_sorting">1901</str>
+    <arr name="type_usi">
+      <str>letter</str>
+    </arr>
+    <arr name="collection_usi">
+      <str>Aus Nachlass Richard Dehmel</str>
+      <str>Brief</str>
+      <str>830 - Deutsche und verwandte Literaturen</str>
+    </arr>
+    <arr name="shelfmark_usi">
+      <str>DA : Br : B : 305</str>
+    </arr>
+    <str name="shelfmark_sorting">DA : Br : B : 305</str>
+    <arr name="DocLanguage_usi">
+      <str>ger</str>
+    </arr>
+    <arr name="iiifReference_usi">
+      <str>https://iiif.sub.uni-hamburg.de/object/HANSb312993/manifest</str>
+    </arr>
+    <str name="volume"/>
+    <str name="fulltext"/>
+    <date name="timestamp">2021-11-12T12:16:18.865Z</date></doc>
+  <doc>
+    <str name="id">5242LOG_0000</str>
+    <int name="uid">5242</int>
+    <int name="page">1</int>
+    <str name="thumbnail">https://pic.sub.uni-hamburg.de/HANSb312816/150/0/00000001.tif</str>
+    <int name="partof">0</int>
+    <int name="root">0</int>
+    <str name="sid">LOG_0000</str>
+    <bool name="toplevel">true</bool>
+    <str name="type">letter</str>
+    <str name="title">Brief an Peter Behrens</str>
+    <str name="record_id">HANSb312816</str>
+    <str name="purl">https://resolver.sub.uni-hamburg.de/kitodo/HANSb312816</str>
+    <str name="location">https://mets.sub.uni-hamburg.de/kitodo/HANSb312816</str>
+    <str name="urn">urn:nbn:de:gbv:18-5-HANSb3128164</str>
+    <arr name="collection">
+      <str>Aus Nachlass Richard Dehmel</str>
+      <str>Brief</str>
+      <str>830 - Deutsche und verwandte Literaturen</str>
+    </arr>
+    <arr name="title_usi">
+      <str>Brief an Peter Behrens</str>
+    </arr>
+    <str name="title_sorting">Brief an Peter Behrens</str>
+    <arr name="author_usi">
+      <str>Dehmel, Richard</str>
+    </arr>
+    <str name="author_sorting">Dehmel, Richard</str>
+    <arr name="place_usu">
+      <str>Spetzgart bei Ueberlingen</str>
+    </arr>
+    <str name="place_sorting">Spetzgart bei Ueberlingen</str>
+    <arr name="year_usi">
+      <str>1900</str>
+    </arr>
+    <str name="year_sorting">1900</str>
+    <arr name="type_usi">
+      <str>letter</str>
+    </arr>
+    <arr name="collection_usi">
+      <str>Aus Nachlass Richard Dehmel</str>
+      <str>Brief</str>
+      <str>830 - Deutsche und verwandte Literaturen</str>
+    </arr>
+    <arr name="shelfmark_usi">
+      <str>DA : Br : D : 1987</str>
+    </arr>
+    <str name="shelfmark_sorting">DA : Br : D : 1987</str>
+    <arr name="DocLanguage_usi">
+      <str>ger</str>
+    </arr>
+    <arr name="iiifReference_usi">
+      <str>https://iiif.sub.uni-hamburg.de/object/HANSb312816/manifest</str>
+    </arr>
+    <str name="volume"/>
+    <str name="fulltext"/>
+    <date name="timestamp">2021-11-12T12:15:21.357Z</date></doc>
+  <doc>
+    <str name="id">13497LOG_0000</str>
+    <int name="uid">13497</int>
+    <int name="page">1</int>
+    <str name="thumbnail">https://pic.sub.uni-hamburg.de/HANSb313024/150/0/00000001.tif</str>
+    <int name="partof">0</int>
+    <int name="root">0</int>
+    <str name="sid">LOG_0000</str>
+    <bool name="toplevel">true</bool>
+    <str name="type">letter</str>
+    <str name="title">Brief an Richard Dehmel</str>
+    <str name="record_id">HANSb313024</str>
+    <str name="purl">https://resolver.sub.uni-hamburg.de/kitodo/HANSb313024</str>
+    <str name="location">https://mets.sub.uni-hamburg.de/kitodo/HANSb313024</str>
+    <str name="urn">urn:nbn:de:gbv:18-5-HANSb3130242</str>
+    <arr name="collection">
+      <str>Aus Nachlass Richard Dehmel</str>
+      <str>Brief</str>
+      <str>830 - Deutsche und verwandte Literaturen</str>
+    </arr>
+    <arr name="title_usi">
+      <str>Brief an Richard Dehmel</str>
+    </arr>
+    <str name="title_sorting">Brief an Richard Dehmel</str>
+    <arr name="author_usi">
+      <str>Behrens, Peter</str>
+      <str>Dehmel, Ida</str>
+    </arr>
+    <str name="author_sorting">Behrens, Peter</str>
+    <arr name="place_usu">
+      <str>Düsseldorf</str>
+    </arr>
+    <str name="place_sorting">Düsseldorf</str>
+    <arr name="year_usi">
+      <str>1905</str>
+    </arr>
+    <str name="year_sorting">1905</str>
+    <arr name="type_usi">
+      <str>letter</str>
+    </arr>
+    <arr name="collection_usi">
+      <str>Aus Nachlass Richard Dehmel</str>
+      <str>Brief</str>
+      <str>830 - Deutsche und verwandte Literaturen</str>
+    </arr>
+    <arr name="shelfmark_usi">
+      <str>DA : Br : B : 348</str>
+    </arr>
+    <str name="shelfmark_sorting">DA : Br : B : 348</str>
+    <arr name="DocLanguage_usi">
+      <str>ger</str>
+    </arr>
+    <arr name="iiifReference_usi">
+      <str>https://iiif.sub.uni-hamburg.de/object/HANSb313024/manifest</str>
+    </arr>
+    <str name="volume"/>
+    <str name="fulltext"/>
+    <date name="timestamp">2021-11-12T12:15:55.807Z</date></doc>
+  <doc>
+    <str name="id">41938LOG_0000</str>
+    <int name="uid">41938</int>
+    <int name="page">1</int>
+    <str name="thumbnail">https://pic.sub.uni-hamburg.de/HANSb312985/150/0/00000001.tif</str>
+    <int name="partof">0</int>
+    <int name="root">0</int>
+    <str name="sid">LOG_0000</str>
+    <bool name="toplevel">true</bool>
+    <str name="type">letter</str>
+    <str name="title">Telegramm an Richard Dehmel</str>
+    <str name="record_id">HANSb312985</str>
+    <str name="purl">https://resolver.sub.uni-hamburg.de/kitodo/HANSb312985</str>
+    <str name="location">https://mets.sub.uni-hamburg.de/kitodo/HANSb312985</str>
+    <str name="urn">urn:nbn:de:gbv:18-5-HANSb3129854</str>
+    <arr name="collection">
+      <str>Aus Nachlass Richard Dehmel</str>
+      <str>Brief</str>
+      <str>830 - Deutsche und verwandte Literaturen</str>
+    </arr>
+    <arr name="title_usi">
+      <str>Telegramm an Richard Dehmel</str>
+    </arr>
+    <str name="title_sorting">Telegramm an Richard Dehmel</str>
+    <arr name="author_usi">
+      <str>Behrens, Peter</str>
+    </arr>
+    <str name="author_sorting">Behrens, Peter</str>
+    <arr name="place_usu">
+      <str>Darmstadt</str>
+    </arr>
+    <str name="place_sorting">Darmstadt</str>
+    <arr name="year_usi">
+      <str>1900</str>
+    </arr>
+    <str name="year_sorting">1900</str>
+    <arr name="type_usi">
+      <str>letter</str>
+    </arr>
+    <arr name="collection_usi">
+      <str>Aus Nachlass Richard Dehmel</str>
+      <str>Brief</str>
+      <str>830 - Deutsche und verwandte Literaturen</str>
+    </arr>
+    <arr name="shelfmark_usi">
+      <str>DA : Br : B : 299</str>
+    </arr>
+    <str name="shelfmark_sorting">DA : Br : B : 299</str>
+    <arr name="DocLanguage_usi">
+      <str>ger</str>
+    </arr>
+    <arr name="iiifReference_usi">
+      <str>https://iiif.sub.uni-hamburg.de/object/HANSb312985/manifest</str>
+    </arr>
+    <str name="volume"/>
+    <str name="fulltext"/>
+    <date name="timestamp">2021-11-12T12:15:50.260Z</date></doc>
+  <doc>
+    <str name="id">37062LOG_0000</str>
+    <int name="uid">37062</int>
+    <int name="page">1</int>
+    <str name="thumbnail">https://pic.sub.uni-hamburg.de/HANSb27508/150/0/00000001.tif</str>
+    <int name="partof">0</int>
+    <int name="root">0</int>
+    <str name="sid">LOG_0000</str>
+    <bool name="toplevel">true</bool>
+    <str name="type">letter</str>
+    <str name="title">Postkarte an Richard Dehmel</str>
+    <str name="record_id">HANSb27508</str>
+    <str name="purl">https://resolver.sub.uni-hamburg.de/kitodo/HANSb27508</str>
+    <str name="location">https://mets.sub.uni-hamburg.de/kitodo/HANSb27508</str>
+    <str name="urn">urn:nbn:de:gbv:18-5-HANSb275080</str>
+    <arr name="collection">
+      <str>Aus Nachlass Richard Dehmel</str>
+      <str>Brief</str>
+      <str>830 - Deutsche und verwandte Literaturen</str>
+    </arr>
+    <arr name="title_usi">
+      <str>Postkarte an Richard Dehmel</str>
+    </arr>
+    <str name="title_sorting">Postkarte an Richard Dehmel</str>
+    <arr name="author_usi">
+      <str>Zweig, Stefan</str>
+    </arr>
+    <str name="author_sorting">Zweig, Stefan</str>
+    <arr name="place_usu">
+      <str>Agra</str>
+    </arr>
+    <str name="place_sorting">Agra</str>
+    <arr name="year_usi">
+      <str>1909</str>
+    </arr>
+    <str name="year_sorting">1909</str>
+    <arr name="type_usi">
+      <str>letter</str>
+    </arr>
+    <arr name="collection_usi">
+      <str>Aus Nachlass Richard Dehmel</str>
+      <str>Brief</str>
+      <str>830 - Deutsche und verwandte Literaturen</str>
+    </arr>
+    <arr name="shelfmark_usi">
+      <str>DA : Pk-Album : V : 16</str>
+    </arr>
+    <str name="shelfmark_sorting">DA : Pk-Album : V : 16</str>
+    <arr name="DocLanguage_usi">
+      <str>ger</str>
+    </arr>
+    <arr name="iiifReference_usi">
+      <str>https://iiif.sub.uni-hamburg.de/object/HANSb27508/manifest</str>
+    </arr>
+    <str name="volume"/>
+    <str name="fulltext"/>
+    <date name="timestamp">2021-11-11T17:55:53.207Z</date></doc>
+</result>
+</response>

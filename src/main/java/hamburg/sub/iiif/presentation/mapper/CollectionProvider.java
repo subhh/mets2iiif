@@ -24,64 +24,57 @@
 
 package hamburg.sub.iiif.presentation.mapper;
 
-import javax.json.JsonObjectBuilder;
+import java.io.IOException;
+import java.net.URL;
 
+import javax.json.JsonObjectBuilder;
 import javax.xml.transform.Source;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
-
-import javax.xml.transform.stream.StreamSource;
-
 import javax.xml.transform.dom.DOMResult;
+import javax.xml.transform.stream.StreamSource;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import java.net.URL;
-
-import java.io.IOException;
-
 import net.jcip.annotations.ThreadSafe;
 
 /**
- * Retrieves entities via XSL transformation.
+ * Provide collections.
  */
 @ThreadSafe
-public final class EntityProvider
+public final class CollectionProvider
 {
-    private final JsonFactory jsonFactory = new JsonFactory();
-    private final TransformerProvider transformerProvider = new TransformerProvider("/mets2iiif.xsl");
     private final Environment environment = new Environment();
+    private final JsonFactory jsonFactory = new JsonFactory();
+    private final TransformerProvider transformerProvider = new TransformerProvider("/collection.xsl");
 
-    public JsonObjectBuilder getEntity (final String objectId, final EntityType entityType, final String entityId) throws IOException, EntityNotFoundException
+    public JsonObjectBuilder getCollection (final int page) throws CollectionNotFoundException, IOException
     {
-        URL sourceUrl = environment.resolveEntitySourceUrl(objectId);
+        URL sourceUrl = environment.resolveCollectionSourceUrl(page);
 
         Source source = new StreamSource(sourceUrl.openStream());
-        Element entityElement = getEntityElement(source, entityType, entityId);
-        return jsonFactory.createJsonObject(entityElement);
+        Element collectionElement = getCollectionElement(source);
+        return jsonFactory.createJsonObject(collectionElement);
     }
 
-    private Element getEntityElement (final Source source, final EntityType entityType, final String entityId) throws EntityNotFoundException
+    private Element getCollectionElement (final Source source) throws CollectionNotFoundException
     {
         Transformer transformer = transformerProvider.newTransformer();
 
         DOMResult result = new DOMResult();
         try {
             transformer.clearParameters();
-            transformer.setParameter("entityType", entityType);
-            if (entityId != null) {
-                transformer.setParameter("entityId", entityId);
-            }
+            transformer.setParameter("itemsPerPage", environment.getItemsPerPage());
             transformer.transform(source, result);
         } catch (TransformerException e) {
-            String message = String.format("Transformation error while getting entity %s with id %s", entityType, entityId);
-            throw new RuntimeException(message, e);
+            throw new RuntimeException("Transformation error while getting collection", e);
         }
-        Element entity = ((Document)result.getNode()).getDocumentElement();
-        if (entity.getLocalName().equals("error")) {
-            throw new EntityNotFoundException(entity.getTextContent());
+
+        Element collection = ((Document)result.getNode()).getDocumentElement();
+        if (collection.getLocalName().equals("error")) {
+            throw new CollectionNotFoundException(collection.getTextContent());
         }
-        return entity;
+        return collection;
     }
 }

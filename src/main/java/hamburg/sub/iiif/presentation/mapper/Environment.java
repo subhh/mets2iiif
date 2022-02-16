@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020,2021 by Staats- und Universitätsbibliothek Hamburg
+ * Copyright (C) 2020-2022 by Staats- und Universitätsbibliothek Hamburg
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -24,8 +24,12 @@
 
 package hamburg.sub.iiif.presentation.mapper;
 
+import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
+import java.util.StringJoiner;
 
 import net.jcip.annotations.ThreadSafe;
 
@@ -35,8 +39,57 @@ import net.jcip.annotations.ThreadSafe;
 @ThreadSafe
 public final class Environment
 {
-    public URL resolveSourceUrl (final String objectId) throws MalformedURLException
+    private final String solrBaseUrl;
+    private final int itemsPerPage;
+
+    public Environment ()
+    {
+        solrBaseUrl = System.getProperty("hamburg.sub.iiif.presentation.solr.baseUrl");
+        itemsPerPage = Integer.parseInt(System.getProperty("hamburg.sub.iiif.presentation.itemsPerPage", "25"));
+    }
+
+    public int getItemsPerPage ()
+    {
+        return itemsPerPage;
+    }
+
+    public URL resolveEntitySourceUrl (final String objectId) throws MalformedURLException
     {
         return new URL("http://mets.sub.uni-hamburg.de/kitodo/" + objectId);
+    }
+
+    public URL resolveCollectionSourceUrl (final int page) throws MalformedURLException
+    {
+        if (solrBaseUrl == null) {
+            String filename;
+            if (page == 0) {
+                filename = "/collection-0.xml";
+            } else {
+                filename = "/collection-1.xml";
+            }
+            return getClass().getResource(filename);
+        }
+
+        StringJoiner queryJoiner = new StringJoiner("&", "?", "");
+        queryJoiner.add("wt=xml");
+        queryJoiner.add("q=" + encode("*:*"));
+        queryJoiner.add("fq=" + encode("iiifReference_usi:*"));
+        if (page == 0) {
+            queryJoiner.add("rows=0");
+        } else {
+            queryJoiner.add(String.format("rows=%d", itemsPerPage));
+            queryJoiner.add(String.format("start=%d", (page - 1) * itemsPerPage));
+        }
+
+        return new URL(solrBaseUrl + queryJoiner.toString());
+    }
+
+    private String encode (final String value)
+    {
+        try {
+            return URLEncoder.encode(value, StandardCharsets.UTF_8.toString());
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

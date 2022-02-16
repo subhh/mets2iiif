@@ -27,10 +27,13 @@ package hamburg.sub.iiif.presentation.mapper;
 import net.jcip.annotations.ThreadSafe;
 
 /**
- * Entities.
+ * Thrown if the requested collection is empty or not found.
  */
 @ThreadSafe
-public enum EntityType
+public final class CollectionNotFoundException extends Exception
 {
-    Manifest, Sequence, Canvas
+    public CollectionNotFoundException (final String message)
+    {
+        super(message);
+    }
 }

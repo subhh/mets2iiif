@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020,2021 by Staats- und Universitätsbibliothek Hamburg
+ * Copyright (C) 2020-2022 by Staats- und Universitätsbibliothek Hamburg
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -44,13 +44,13 @@ final class TransformerProvider
     private final Templates templates;
     private final Resolver resolver;
 
-    TransformerProvider ()
+    TransformerProvider (final String stylesheet)
     {
         try {
             resolver = new Resolver();
             TransformerFactory factory = new TransformerFactoryImpl();
             factory.setURIResolver(resolver);
-            templates = factory.newTemplates(resolver.resolve("/mets2iiif.xsl", null));
+            templates = factory.newTemplates(resolver.resolve(stylesheet, null));
         } catch (TransformerException e) {
             throw new RuntimeException(e);
         }

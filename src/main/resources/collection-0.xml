@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+
+<lst name="responseHeader">
+  <int name="status">0</int>
+  <int name="QTime">0</int>
+  <lst name="params">
+    <str name="q">*:*</str>
+    <arr name="fq">
+      <str>collection_usi:"Aus Nachlass Richard Dehmel"</str>
+      <str>iiifReference_usi:["" TO *]</str>
+    </arr>
+    <str name="wt">xml</str>
+  </lst>
+</lst>
+<result name="response" numFound="24" start="0">
+</result>
+</response>
