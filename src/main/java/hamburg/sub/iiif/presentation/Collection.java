@@ -65,7 +65,7 @@ public final class Collection
     @Produces({"application/ld+json", "application/json"})
     public Response getCollection ()
     {
-        return getCollectionResponse(null);
+        return getCollectionResponse(0);
     }
 
     @GET
@@ -111,7 +111,7 @@ public final class Collection
         }
     }
 
-    private Response getCollectionResponse (final Integer page)
+    private Response getCollectionResponse (final int page)
     {
         ResponseBuilder response;
         try {

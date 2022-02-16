@@ -51,7 +51,7 @@ public final class CollectionProvider
     private final JsonFactory jsonFactory = new JsonFactory();
     private final TransformerProvider transformerProvider = new TransformerProvider("/collection.xsl");
 
-    public JsonObjectBuilder getCollection (final Integer page) throws CollectionNotFoundException, IOException
+    public JsonObjectBuilder getCollection (final int page) throws CollectionNotFoundException, IOException
     {
         URL sourceUrl = environment.resolveCollectionSourceUrl(page);
 

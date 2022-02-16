@@ -50,11 +50,11 @@ public final class Environment
         return new URL("http://mets.sub.uni-hamburg.de/kitodo/" + objectId);
     }
 
-    public URL resolveCollectionSourceUrl (final Integer page) throws MalformedURLException
+    public URL resolveCollectionSourceUrl (final int page) throws MalformedURLException
     {
         if (solrBaseUrl == null) {
             String filename;
-            if (page == null) {
+            if (page == 0) {
                 filename = "/collection-0.xml";
             } else {
                 filename = "/collection-1.xml";
