@@ -35,17 +35,30 @@ import net.jcip.annotations.ThreadSafe;
 @ThreadSafe
 public final class Environment
 {
+    private final String solrBaseUrl;
+
+    public Environment ()
+    {
+        solrBaseUrl = System.getProperty("hamburg.sub.iiif.presentation.solrBaseUrl");
+    }
+    
     public URL resolveEntitySourceUrl (final String objectId) throws MalformedURLException
     {
         return new URL("http://mets.sub.uni-hamburg.de/kitodo/" + objectId);
     }
 
-    public URL resolveCollectionSourceUrl (final Integer page)
+    public URL resolveCollectionSourceUrl (final Integer page) throws MalformedURLException
     {
-        if (page == null) {
-            return getClass().getResource("/collection-0.xml");
-        } else {
-            return getClass().getResource("/collection-1.xml");
+        if (solrBaseUrl == null) {
+            String filename;
+            if (page == null) {
+                filename = "/collection-0.xml";
+            } else {
+                filename = "/collection-1.xml";
+            }
+            return getClass().getResource(filename);
         }
+
+        return new URL(solrBaseUrl);
     }
 }
