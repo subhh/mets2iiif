@@ -24,8 +24,11 @@
 
 package hamburg.sub.iiif.presentation.mapper;
 
+import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 
 import net.jcip.annotations.ThreadSafe;
 
@@ -41,7 +44,7 @@ public final class Environment
     {
         solrBaseUrl = System.getProperty("hamburg.sub.iiif.presentation.solrBaseUrl");
     }
-    
+
     public URL resolveEntitySourceUrl (final String objectId) throws MalformedURLException
     {
         return new URL("http://mets.sub.uni-hamburg.de/kitodo/" + objectId);
@@ -60,5 +63,14 @@ public final class Environment
         }
 
         return new URL(solrBaseUrl);
+    }
+
+    private String encode (final String value)
+    {
+        try {
+            return URLEncoder.encode(value, StandardCharsets.UTF_8.toString());
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
