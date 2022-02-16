@@ -42,7 +42,7 @@ public final class Environment
 
     public Environment ()
     {
-        solrBaseUrl = System.getProperty("hamburg.sub.iiif.presentation.solrBaseUrl");
+        solrBaseUrl = System.getProperty("hamburg.sub.iiif.presentation.solr.baseUrl");
     }
 
     public URL resolveEntitySourceUrl (final String objectId) throws MalformedURLException
