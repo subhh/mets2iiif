@@ -39,11 +39,12 @@ import net.jcip.annotations.ThreadSafe;
 public final class Environment
 {
     private final String solrBaseUrl;
-    private final int itemsPerPage = 25;
+    private final int itemsPerPage;
 
     public Environment ()
     {
         solrBaseUrl = System.getProperty("hamburg.sub.iiif.presentation.solr.baseUrl");
+        itemsPerPage = Integer.parseInt(System.getProperty("hamburg.sub.iiif.presentation.itemsPerPage", "25"));
     }
 
     public int getItemsPerPage ()
