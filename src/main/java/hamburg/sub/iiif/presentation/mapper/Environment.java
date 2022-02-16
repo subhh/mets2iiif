@@ -43,9 +43,9 @@ public final class Environment
     public URL resolveCollectionSourceUrl (final Integer page)
     {
         if (page == null) {
-            return getClass().getResource("/collection-description.xml");
+            return getClass().getResource("/collection-0.xml");
         } else {
-            return getClass().getResource("/collection.xml");
+            return getClass().getResource("/collection-1.xml");
         }
     }
 }

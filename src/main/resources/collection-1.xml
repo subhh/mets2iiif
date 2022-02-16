@@ -13,7 +13,7 @@
     <str name="wt">xml</str>
   </lst>
 </lst>
-<result name="response" numFound="253" start="0">
+<result name="response" numFound="24" start="0">
   <doc>
     <str name="id">37054LOG_0000</str>
     <int name="uid">37054</int>
