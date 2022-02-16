@@ -45,8 +45,6 @@ import net.jcip.annotations.ThreadSafe;
 @ThreadSafe
 public final class CollectionProvider
 {
-    private static final int ITEMS_PER_PAGE = 25;
-
     private final Environment environment = new Environment();
     private final JsonFactory jsonFactory = new JsonFactory();
     private final TransformerProvider transformerProvider = new TransformerProvider("/collection.xsl");
@@ -67,7 +65,7 @@ public final class CollectionProvider
         DOMResult result = new DOMResult();
         try {
             transformer.clearParameters();
-            transformer.setParameter("itemsPerPage", ITEMS_PER_PAGE);
+            transformer.setParameter("itemsPerPage", environment.getItemsPerPage());
             transformer.transform(source, result);
         } catch (TransformerException e) {
             throw new RuntimeException("Transformation error while getting collection", e);

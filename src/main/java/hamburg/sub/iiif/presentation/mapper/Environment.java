@@ -39,10 +39,16 @@ import net.jcip.annotations.ThreadSafe;
 public final class Environment
 {
     private final String solrBaseUrl;
+    private final int itemsPerPage = 25;
 
     public Environment ()
     {
         solrBaseUrl = System.getProperty("hamburg.sub.iiif.presentation.solr.baseUrl");
+    }
+
+    public int getItemsPerPage ()
+    {
+        return itemsPerPage;
     }
 
     public URL resolveEntitySourceUrl (final String objectId) throws MalformedURLException
