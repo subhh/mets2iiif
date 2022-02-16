@@ -29,6 +29,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
+import java.util.StringJoiner;
 
 import net.jcip.annotations.ThreadSafe;
 
@@ -69,7 +70,18 @@ public final class Environment
             return getClass().getResource(filename);
         }
 
-        return new URL(solrBaseUrl);
+        StringJoiner queryJoiner = new StringJoiner("&", "?", "");
+        queryJoiner.add("wt=xml");
+        queryJoiner.add("q=" + encode("*:*"));
+        queryJoiner.add("fq=" + encode("iiifReference_usi:*"));
+        if (page == 0) {
+            queryJoiner.add("rows=0");
+        } else {
+            queryJoiner.add(String.format("rows=%d", itemsPerPage));
+            queryJoiner.add(String.format("start=%d", (page - 1) * itemsPerPage));
+        }
+
+        return new URL(solrBaseUrl + queryJoiner.toString());
     }
 
     private String encode (final String value)
