@@ -25,14 +25,12 @@
 package hamburg.sub.iiif.presentation.mapper;
 
 import java.io.IOException;
-import java.net.URL;
 
 import javax.json.JsonObjectBuilder;
 import javax.xml.transform.Source;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.dom.DOMResult;
-import javax.xml.transform.stream.StreamSource;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -51,9 +49,7 @@ public final class CollectionProvider
 
     public JsonObjectBuilder getCollection (final int page) throws CollectionNotFoundException, IOException
     {
-        URL sourceUrl = environment.resolveCollectionSourceUrl(page);
-
-        Source source = new StreamSource(sourceUrl.openStream());
+        Source source = environment.dereferenceCollectionSource(page);
         Element collectionElement = getCollectionElement(source);
         return jsonFactory.createJsonObject(collectionElement);
     }

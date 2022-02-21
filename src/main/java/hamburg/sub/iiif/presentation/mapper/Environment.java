@@ -24,12 +24,18 @@
 
 package hamburg.sub.iiif.presentation.mapper;
 
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLConnection;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
+import java.util.Base64;
 import java.util.StringJoiner;
+
+import javax.xml.transform.Source;
+import javax.xml.transform.stream.StreamSource;
 
 import net.jcip.annotations.ThreadSafe;
 
@@ -40,11 +46,15 @@ import net.jcip.annotations.ThreadSafe;
 public final class Environment
 {
     private final String solrBaseUrl;
+    private final String solrAuthUser;
+    private final String solrAuthPass;
     private final int itemsPerPage;
 
     public Environment ()
     {
         solrBaseUrl = System.getProperty("hamburg.sub.iiif.presentation.solr.baseUrl");
+        solrAuthUser = System.getProperty("hamburg.sub.iiif.presentation.solr.authUser");
+        solrAuthPass = System.getProperty("hamburg.sub.iiif.presentation.solr.authPass");
         itemsPerPage = Integer.parseInt(System.getProperty("hamburg.sub.iiif.presentation.itemsPerPage", "25"));
     }
 
@@ -53,12 +63,30 @@ public final class Environment
         return itemsPerPage;
     }
 
-    public URL resolveEntitySourceUrl (final String objectId) throws MalformedURLException
+    public Source dereferenceEntitySource (final String objectId) throws IOException
+    {
+        URL url = resolveEntitySourceUrl(objectId);
+        return new StreamSource(url.openStream());
+    }
+
+    private URL resolveEntitySourceUrl (final String objectId) throws MalformedURLException
     {
         return new URL("http://mets.sub.uni-hamburg.de/kitodo/" + objectId);
     }
 
-    public URL resolveCollectionSourceUrl (final int page) throws MalformedURLException
+    public Source dereferenceCollectionSource (final int page) throws IOException
+    {
+        URL url = resolveCollectionSourceUrl(page);
+        URLConnection connection = url.openConnection();
+        if (solrAuthUser != null && solrAuthPass != null) {
+            String credentials = String.format("%s:%s", solrAuthUser, solrAuthPass);
+            String auth = Base64.getEncoder().encodeToString(credentials.getBytes(StandardCharsets.UTF_8.toString()));
+            connection.setRequestProperty("Authorization", "Basic " + auth);
+        }
+        return new StreamSource(connection.getInputStream());
+    }
+
+    private URL resolveCollectionSourceUrl (final int page) throws MalformedURLException
     {
         if (solrBaseUrl == null) {
             String filename;
