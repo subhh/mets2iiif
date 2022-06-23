@@ -594,7 +594,11 @@
         </json:array>
       </xsl:where-populated>
     </json:map>
-    <xsl:next-match/>
+    <!-- If provide-context is true(), then we are requested to
+         provide a single range only. -->
+    <xsl:if test="not($provide-context)">
+      <xsl:next-match/>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template name="fn:image-dimensions" as="map(xs:string, xs:integer)">
