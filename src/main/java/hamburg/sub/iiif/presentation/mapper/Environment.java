@@ -71,7 +71,7 @@ public final class Environment
 
     private URL resolveEntitySourceUrl (final String objectId) throws MalformedURLException
     {
-        return new URL("http://mets.sub.uni-hamburg.de/kitodo/" + objectId);
+        return new URL("https://mets.sub.uni-hamburg.de/kitodo/" + objectId);
     }
 
     public Source dereferenceCollectionSource (final int page) throws IOException
