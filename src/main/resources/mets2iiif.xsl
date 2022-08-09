@@ -675,7 +675,7 @@
     </json:map>
   </xsl:template>
 
-  <xsl:template match="mods:originInfo" mode="metadata" as="element(json:map)">
+  <xsl:template match="mods:originInfo" mode="metadata" as="element(json:map)?">
     <xsl:variable name="date" as="element()*">
       <xsl:choose>
         <xsl:when test="mods:dateIssued">
