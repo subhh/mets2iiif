@@ -43,6 +43,8 @@ import net.jcip.annotations.ThreadSafe;
 @ThreadSafe
 public final class CollectionProvider
 {
+    private static final String NAME = "name";
+
     private final Environment environment = new Environment();
     private final JsonFactory jsonFactory = new JsonFactory();
     private final TransformerProvider transformerProvider = new TransformerProvider("/collection.xsl");
@@ -55,11 +57,11 @@ public final class CollectionProvider
     public JsonObjectBuilder getCollection (final int page, final String name) throws CollectionNotFoundException, IOException
     {
         Source source = environment.dereferenceCollectionSource(page, name);
-        Element collectionElement = getCollectionElement(source);
+        Element collectionElement = getCollectionElement(source, name);
         return jsonFactory.createJsonObject(collectionElement);
     }
 
-    private Element getCollectionElement (final Source source) throws CollectionNotFoundException
+    private Element getCollectionElement (final Source source, final String name) throws CollectionNotFoundException
     {
         Transformer transformer = transformerProvider.newTransformer();
 
@@ -68,9 +70,9 @@ public final class CollectionProvider
             transformer.clearParameters();
             transformer.setParameter("itemsPerPage", environment.getItemsPerPage());
             if (name == null) {
-                transformer.setParameter("name", "all");
+                transformer.setParameter(NAME, "all");
             } else {
-                transformer.setParameter("name", name);
+                transformer.setParameter(NAME, name);
             }
             transformer.transform(source, result);
         } catch (TransformerException e) {
