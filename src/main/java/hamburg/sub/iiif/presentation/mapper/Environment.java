@@ -76,6 +76,11 @@ public final class Environment
 
     public Source dereferenceCollectionSource (final int page) throws IOException
     {
+        return dereferenceCollectionSource(page, null);
+    }
+
+    public Source dereferenceCollectionSource (final int page, final String name) throws IOException
+    {
         URL url = resolveCollectionSourceUrl(page);
         URLConnection connection = url.openConnection();
         if (solrAuthUser != null && solrAuthPass != null) {
@@ -87,6 +92,11 @@ public final class Environment
     }
 
     private URL resolveCollectionSourceUrl (final int page) throws MalformedURLException
+    {
+        return resolveCollectionSourceUrl(page, null);
+    }
+
+    private URL resolveCollectionSourceUrl (final int page, final String name) throws MalformedURLException
     {
         if (solrBaseUrl == null) {
             String filename;
@@ -102,6 +112,9 @@ public final class Environment
         queryJoiner.add("wt=xml");
         queryJoiner.add("q=" + encode("*:*"));
         queryJoiner.add("fq=" + encode("iiifReference_usi:*"));
+        if (name != null) {
+            queryJoiner.add("fq=" + encode("collection_usi:\"" + name + "\""));
+        }
         if (page == 0) {
             queryJoiner.add("rows=0");
         } else {
@@ -120,4 +133,5 @@ public final class Environment
             throw new RuntimeException(e);
         }
     }
+
 }
