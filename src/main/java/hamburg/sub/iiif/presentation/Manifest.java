@@ -102,21 +102,19 @@ public final class Manifest
     private Response getEntityResponse (final String objectId, final EntityType entityType, final String entityId)
     {
         ResponseBuilder response;
-        JsonObjectBuilder entity = getEntity(objectId, entityType, entityId);
-        if (entity == null) {
-            response = Response.status(Status.NOT_FOUND);
-        } else {
+        try {
+            JsonObjectBuilder entity = getEntity(objectId, entityType, entityId);
             response = Response.ok(entity.build().toString());
+        } catch (EntityNotFoundException e) {
+            response = Response.status(Status.NOT_FOUND);
+        } catch (IOException e) {
+            response = Response.status(Status.BAD_GATEWAY);
         }
         return response.build();
     }
 
-    private JsonObjectBuilder getEntity (final String objectId, final EntityType entityType, final String entityId)
+    private JsonObjectBuilder getEntity (final String objectId, final EntityType entityType, final String entityId) throws EntityNotFoundException, IOException
     {
-        try {
-            return entities.getEntity(objectId, entityType, entityId);
-        } catch (EntityNotFoundException | IOException e) {
-            return null;
-        }
+        return entities.getEntity(objectId, entityType, entityId);
     }
 }
