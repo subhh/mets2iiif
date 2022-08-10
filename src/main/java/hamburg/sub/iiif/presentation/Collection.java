@@ -76,6 +76,22 @@ public final class Collection
         return getCollectionResponse(page);
     }
 
+    @GET
+    @Path("{name}")
+    @Produces({"application/ld+json", "application/json"})
+    public Response getNamedCollection (@PathParam("name") final String name)
+    {
+        return getCollectionResponse(0, name);
+    }
+
+    @GET
+    @Path("{name}/{page: [0-9]+}")
+    @Produces({"application/ld+json", "application/json"})
+    public Response getNamedCollection (@PathParam("page") final Integer page, @PathParam("name") final String name)
+    {
+        return getCollectionResponse(page, name);
+    }
+
     @OPTIONS
     public Response getToplevelCollectionCORS ()
     {
@@ -113,9 +129,14 @@ public final class Collection
 
     private Response getCollectionResponse (final int page)
     {
+        return getCollectionResponse(page, null);
+    }
+
+    private Response getCollectionResponse (final int page, final String name)
+    {
         ResponseBuilder response;
         try {
-            JsonObjectBuilder collection = collections.getCollection(page);
+            JsonObjectBuilder collection = collections.getCollection(page, name);
             response = Response.ok(collection.build().toString());
         } catch (CollectionNotFoundException | IOException e) {
             response = Response.status(Status.NOT_FOUND);
