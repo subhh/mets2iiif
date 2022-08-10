@@ -8,8 +8,9 @@
   <xsl:output indent="yes"/>
 
   <xsl:param name="itemsPerPage" as="xs:integer" required="yes"/>
+  <xsl:param name="name" as="xs:string" required="true"/>
 
-  <xsl:variable name="collectionUri" as="xs:string">https://iiif.sub.uni-hamburg.de/collection/all</xsl:variable>
+  <xsl:variable name="collectionUri" as="xs:string">https://iiif.sub.uni-hamburg.de/collection/{encode-for-uri($name)}</xsl:variable>
   <xsl:variable name="collectionLabel" as="xs:string">Digitalisierte Bestände</xsl:variable>
 
   <xsl:template match="result[@numFound = '0']">

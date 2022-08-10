@@ -49,7 +49,12 @@ public final class CollectionProvider
 
     public JsonObjectBuilder getCollection (final int page) throws CollectionNotFoundException, IOException
     {
-        Source source = environment.dereferenceCollectionSource(page);
+        return getCollection(page, null);
+    }
+
+    public JsonObjectBuilder getCollection (final int page, final String name) throws CollectionNotFoundException, IOException
+    {
+        Source source = environment.dereferenceCollectionSource(page, name);
         Element collectionElement = getCollectionElement(source);
         return jsonFactory.createJsonObject(collectionElement);
     }
@@ -62,6 +67,11 @@ public final class CollectionProvider
         try {
             transformer.clearParameters();
             transformer.setParameter("itemsPerPage", environment.getItemsPerPage());
+            if (name == null) {
+                transformer.setParameter("name", "all");
+            } else {
+                transformer.setParameter("name", name);
+            }
             transformer.transform(source, result);
         } catch (TransformerException e) {
             throw new RuntimeException("Transformation error while getting collection", e);
