@@ -113,7 +113,7 @@ public final class Environment
         queryJoiner.add("q=" + encode("*:*"));
         queryJoiner.add("fq=" + encode("iiifReference_usi:*"));
         if (name != null) {
-            queryJoiner.add("fq=" + encode("collection_usi:\"" + name + "\""));
+            queryJoiner.add("fq=" + encode("collection_usi:\"" + escape(name) + "\""));
         }
         if (page == 0) {
             queryJoiner.add("rows=0");
@@ -132,6 +132,11 @@ public final class Environment
         } catch (UnsupportedEncodingException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    private String escape (final String value)
+    {
+        return value.replace("\"", "\\\"");
     }
 
 }
