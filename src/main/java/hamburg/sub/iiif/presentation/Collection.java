@@ -76,6 +76,13 @@ public final class Collection
         return getCollectionResponse(page);
     }
 
+    @OPTIONS
+    @Path("{name}")
+    public Response getNamedCollectionCORS (@PathParam("name") final String name)
+    {
+        return Response.noContent().build();
+    }
+
     @GET
     @Path("{name}")
     @Produces({"application/ld+json", "application/json"})
