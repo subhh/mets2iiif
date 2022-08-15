@@ -88,9 +88,7 @@ public final class Environment
         URL url = resolveCollectionSourceUrl(page, name);
         URLConnection connection = url.openConnection();
         if (solrAuthUser != null && solrAuthPass != null) {
-            String credentials = String.format("%s:%s", solrAuthUser, solrAuthPass);
-            String auth = Base64.getEncoder().encodeToString(credentials.getBytes(StandardCharsets.UTF_8.toString()));
-            connection.setRequestProperty("Authorization", "Basic " + auth);
+            addAuthorization(connection);
         }
         return new StreamSource(connection.getInputStream());
     }
@@ -111,16 +109,21 @@ public final class Environment
         return new URL(solrBaseUrl + queryJoiner.toString());
     }
 
-    public Source dereferenceToplevelCollectionSource ()
+    public Source dereferenceToplevelCollectionSource () throws IOException
     {
-        URL url = resolveCollectionSourceUrl(page, name);
+        URL url = resolveToplevelCollectionSourceUrl();
         URLConnection connection = url.openConnection();
         if (solrAuthUser != null && solrAuthPass != null) {
-            String credentials = String.format("%s:%s", solrAuthUser, solrAuthPass);
-            String auth = Base64.getEncoder().encodeToString(credentials.getBytes(StandardCharsets.UTF_8.toString()));
-            connection.setRequestProperty("Authorization", "Basic " + auth);
+            addAuthorization(connection);
         }
         return new StreamSource(connection.getInputStream());
+    }
+
+    private void addAuthorization (final URLConnection connection) throws UnsupportedEncodingException
+    {
+        String credentials = String.format("%s:%s", solrAuthUser, solrAuthPass);
+        String auth = Base64.getEncoder().encodeToString(credentials.getBytes(StandardCharsets.UTF_8.toString()));
+        connection.setRequestProperty("Authorization", "Basic " + auth);
     }
 
     private URL resolveToplevelCollectionSourceUrl () throws MalformedURLException
