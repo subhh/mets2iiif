@@ -558,7 +558,7 @@
     </xsl:apply-templates>
   </xsl:template>
 
-  <xsl:template match="mets:div[ancestor::mets:structMap[@TYPE = 'LOGICAL']]">
+  <xsl:template match="mets:div[@ID][ancestor::mets:structMap[@TYPE = 'LOGICAL']]">
     <xsl:param name="provide-context" as="xs:boolean" select="false()"/>
     <json:map>
       <xsl:if test="$provide-context">
