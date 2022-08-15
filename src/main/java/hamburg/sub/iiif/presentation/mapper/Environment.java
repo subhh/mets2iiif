@@ -45,6 +45,9 @@ import net.jcip.annotations.ThreadSafe;
 @ThreadSafe
 public final class Environment
 {
+    private static final String SOLR_PARAM_FQ = "fq=";
+    private static final String QUOTE = "\"";
+
     private final String solrBaseUrl;
     private final String solrAuthUser;
     private final String solrAuthPass;
@@ -81,7 +84,7 @@ public final class Environment
 
     public Source dereferenceCollectionSource (final int page, final String name) throws IOException
     {
-        URL url = resolveCollectionSourceUrl(page);
+        URL url = resolveCollectionSourceUrl(page, name);
         URLConnection connection = url.openConnection();
         if (solrAuthUser != null && solrAuthPass != null) {
             String credentials = String.format("%s:%s", solrAuthUser, solrAuthPass);
@@ -91,29 +94,15 @@ public final class Environment
         return new StreamSource(connection.getInputStream());
     }
 
-    private URL resolveCollectionSourceUrl (final int page) throws MalformedURLException
-    {
-        return resolveCollectionSourceUrl(page, null);
-    }
-
     private URL resolveCollectionSourceUrl (final int page, final String name) throws MalformedURLException
     {
-        if (solrBaseUrl == null) {
-            String filename;
-            if (page == 0) {
-                filename = "/collection-0.xml";
-            } else {
-                filename = "/collection-1.xml";
-            }
-            return getClass().getResource(filename);
-        }
 
         StringJoiner queryJoiner = new StringJoiner("&", "?", "");
         queryJoiner.add("wt=xml");
         queryJoiner.add("q=" + encode("*:*"));
-        queryJoiner.add("fq=" + encode("iiifReference_usi:*"));
+        queryJoiner.add(SOLR_PARAM_FQ + encode("iiifReference_usi:*"));
         if (name != null) {
-            queryJoiner.add("fq=" + encode("collection_usi:\"" + escape(name) + "\""));
+            queryJoiner.add(SOLR_PARAM_FQ + encode("type:\"" + escape(name) + QUOTE));
         }
         if (page == 0) {
             queryJoiner.add("rows=0");
@@ -121,7 +110,6 @@ public final class Environment
             queryJoiner.add(String.format("rows=%d", itemsPerPage));
             queryJoiner.add(String.format("start=%d", (page - 1) * itemsPerPage));
         }
-
         return new URL(solrBaseUrl + queryJoiner.toString());
     }
 
@@ -136,7 +124,7 @@ public final class Environment
 
     private String escape (final String value)
     {
-        return value.replace("\"", "\\\"");
+        return value.replace(QUOTE, "\\\"");
     }
 
 }
