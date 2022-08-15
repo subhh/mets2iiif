@@ -45,6 +45,7 @@ import net.jcip.annotations.ThreadSafe;
 @ThreadSafe
 public final class Environment
 {
+    private static final String SOLR_PARAM_NOROWS = "rows=0";
     private static final String SOLR_PARAM_FQ = "fq=";
     private static final String QUOTE = "\"";
 
@@ -102,7 +103,7 @@ public final class Environment
             queryJoiner.add(SOLR_PARAM_FQ + encode("type:\"" + escape(name) + QUOTE));
         }
         if (page == 0) {
-            queryJoiner.add("rows=0");
+            queryJoiner.add(SOLR_PARAM_NOROWS);
         } else {
             queryJoiner.add(String.format("rows=%d", itemsPerPage));
             queryJoiner.add(String.format("start=%d", (page - 1) * itemsPerPage));
