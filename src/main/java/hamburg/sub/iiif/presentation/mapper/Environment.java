@@ -97,7 +97,7 @@ public final class Environment
     private URL resolveCollectionSourceUrl (final int page, final String name) throws MalformedURLException
     {
 
-        StringJoiner queryJoiner = createSolrQueryJoiner();        
+        StringJoiner queryJoiner = createSolrQueryJoiner();
         queryJoiner.add("q=" + encode("*:*"));
         if (name != null) {
             queryJoiner.add(SOLR_PARAM_FQ + encode("type:\"" + escape(name) + QUOTE));
