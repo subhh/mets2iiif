@@ -11,9 +11,8 @@
   <xsl:param name="name" as="xs:string" required="true"/>
 
   <xsl:variable name="collectionUri" as="xs:string">https://iiif.sub.uni-hamburg.de/collection/{encode-for-uri($name)}</xsl:variable>
-  <xsl:variable name="collectionLabel" as="xs:string">Digitalisierte Bestände</xsl:variable>
 
-  <xsl:template match="result[@numFound = '0']">
+  <xsl:template match="result[@numFound = '0']" priority="10">
     <error/>
   </xsl:template>
 
@@ -41,7 +40,7 @@
       <json:string key="@context">http://iiif.io/api/presentation/2/context.json</json:string>
       <json:string key="@id">{$collectionUri}</json:string>
       <json:string key="@type">sc:Collection</json:string>
-      <json:string key="label">{$collectionLabel}</json:string>
+      <json:string key="label">{if ($name eq 'all') then 'Digitalisierte Bestände' else $name}</json:string>
       <json:number key="total">{@numFound}</json:number>
       <json:string key="first">{$collectionUri}/1</json:string>
     </json:map>
