@@ -111,6 +111,27 @@ public final class Environment
         return new URL(solrBaseUrl + queryJoiner.toString());
     }
 
+    public Source dereferenceToplevelCollectionSource ()
+    {
+        URL url = resolveCollectionSourceUrl(page, name);
+        URLConnection connection = url.openConnection();
+        if (solrAuthUser != null && solrAuthPass != null) {
+            String credentials = String.format("%s:%s", solrAuthUser, solrAuthPass);
+            String auth = Base64.getEncoder().encodeToString(credentials.getBytes(StandardCharsets.UTF_8.toString()));
+            connection.setRequestProperty("Authorization", "Basic " + auth);
+        }
+        return new StreamSource(connection.getInputStream());
+    }
+
+    private URL resolveToplevelCollectionSourceUrl () throws MalformedURLException
+    {
+        StringJoiner queryJoiner = createSolrQueryJoiner("toplevel:true");
+        queryJoiner.add(SOLR_PARAM_NOROWS);
+        queryJoiner.add("facet=true");
+        queryJoiner.add("facet.field=type");
+        return new URL(solrBaseUrl + queryJoiner.toString());
+    }
+
     private StringJoiner createSolrQueryJoiner (final String query)
     {
         StringJoiner queryJoiner = new StringJoiner("&", "?", "");
